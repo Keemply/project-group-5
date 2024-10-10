@@ -5,6 +5,7 @@
   |============================
 */
 /* Common styles */
+@import url(./common.css);
 @import url('./reset.css');
 @import url(./header.css);
 @import url(./hero.css);
