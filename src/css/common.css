@@ -1,3 +1,16 @@
+:root {
+    /* Colors */
+    --BLACK: #292929;
+    --ACCET-GREEN: #00b068;
+    --WHITE: #f0f0f0;
+    --LIGHT-GREY: #e4e5e6;
+    --LIGHT-ACCET: #bcdfd1;
+    --HOVER-GREEN: #009156;
+    --ERROR: #e74a3b;
+    --HOVER-GREY: #bbbbbb;
+}
+
+/* Контейнер та секції */
 @media screen and (max-width:359px) {
     .container {
         max-width: 360px;
