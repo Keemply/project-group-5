@@ -19,26 +19,26 @@ function showMoreProjects() {
     block.style.display = 'block';
   });
   currentIndex += projectsPerPage;
-  scrollMyProjects();
+  // scrollMyProjects();
 
   if (currentIndex >= myProjectBlocks.length) {
     myProjectButtonContainer.style.display = 'none';
   }
 }
 
-function scrollMyProjects() {
-  const project = Array.from(myProjectBlocks).slice(
-    currentIndex - projectsPerPage,
-    currentIndex
-  );
+// function scrollMyProjects() {
+//   const project = Array.from(myProjectBlocks).slice(
+//     currentIndex - projectsPerPage,
+//     currentIndex
+//   );
 
-  if (project.length > 0) {
-    project[project.length - 1].scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
-  }
-}
+//   if (project.length > 0) {
+//     project[project.length - 1].scrollIntoView({
+//       behavior: 'smooth',
+//       block: 'start',
+//     });
+//   }
+// }
 
 myProjectBlocks.forEach((block, index) => {
   if (index >= projectsPerPage) {
