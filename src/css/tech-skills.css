@@ -1,0 +1,124 @@
+.tech-skills__title {
+  position: absolute;
+  visibility: hidden;
+}
+
+.tech-skills__container {
+  overflow: hidden;
+  background-color: #bcdfd1;
+  padding: 40px;
+  white-space: nowrap;
+  z-index: 2;
+  position: relative;
+}
+.tech-skills__container-tilted {
+  overflow: hidden;
+  padding: 40px;
+  white-space: nowrap;
+  transform: rotate(2deg);
+  background-color: #e4e5e6;
+}
+.tech-skills__list {
+  display: flex;
+  justify-content: center;
+  animation: marquee 15s linear infinite;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+.tilted {
+  animation: marqueeTilted 15s linear infinite;
+}
+.tilted p {
+  color: #00b068;
+}
+.tech-skills__block {
+  flex-shrink: 0;
+  margin-right: 56px;
+  display: flex;
+  align-items: center;
+}
+
+.tech-skills__text {
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  color: #292929;
+  animation: caterpillar 1s ease-in-out infinite;
+}
+
+@keyframes caterpillar {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  25% {
+    transform: translateX(50%);
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: translateX(0);
+    animation-timing-function: ease-in;
+  }
+  75% {
+    transform: translateX(-50%);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes marqueeTilted {
+  0% {
+    transform: translateX(-100%);
+  }
+  25% {
+    transform: translateX(-50%);
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: translateX(0);
+    animation-timing-function: ease-in;
+  }
+  75% {
+    transform: translateX(50%);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+.tech-skills__list:hover {
+  animation-play-state: paused;
+}
+
+.tech-skills__text:hover {
+  animation: shake 0.5s ease-in-out infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+}
