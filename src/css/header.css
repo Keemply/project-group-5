@@ -1,6 +1,10 @@
+.header {
+  width: 100%;
+  height: 64px;
+}
 @media screen and (max-width: 360px) {
   /* Заголовок */
-  .header {
+  .header-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -96,7 +100,7 @@
 
 @media screen and (min-width: 360px) {
   /* Заголовок */
-  .header {
+  .header-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -165,7 +169,7 @@
 
 @media screen and (min-width: 768px) {
   /* Заголовок */
-  .header {
+  .header-section {
     padding: 26px 0;
     background-color: #fff;
     border-bottom: 1px solid rgba(12, 12, 12, 0.1);
@@ -204,13 +208,13 @@
   }
 
   .nav__list a {
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.03em;
-    color: var(--black);
-    text-decoration: none;
-    transition: color 0.3s;
+    font-weight: 300; /* Вага шрифту */
+    font-size: 16px; /* Розмір шрифту */
+    line-height: 150%; /* Висота рядка */
+    letter-spacing: 0.03em; /* Відстань між літерами */
+    color: var(--black); /* Колір тексту */
+    text-decoration: none; /* Без підкреслення */
+    transition: color 0.3s; /* Анімація при наведенні */
   }
 
   .nav__list a:hover {
@@ -229,7 +233,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .header {
+  .header-section {
     display: flex; /* Вирівнюємо елементи в ряд */
     justify-content: space-between; /* Вирівнюємо елементи з пробілом */
     align-items: center; /* Центруємо по вертикалі */
@@ -308,21 +312,6 @@
   cursor: pointer;
   color: #000;
   margin-bottom: 20px; /* Відстань до меню */
-}
-
-.logo a {
-  font-size: 18px;
-  color: #000; /* Основний колір тексту */
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.logo a span {
-  color: #00b068; /* Accent Green для частини "JEFFERSON" */
-  font-weight: bold;
-}
-.dot {
-  color: #00b068; /* Зелений колір для крапки */
 }
 
 /* Стилі навігації */
