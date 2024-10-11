@@ -10,6 +10,17 @@
     --HOVER-GREY: #bbbbbb;
 }
 
+/* Основні стилі */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins-Light', sans-serif;
+    color: var(--BLACK);
+    background-color: var(--WHITE);
+}
+
 /* Контейнер та секції */
 @media screen and (max-width:359px) {
     .container {
@@ -33,7 +44,6 @@
 
     section {
         margin-bottom: 80px;
-        font-family: 'Poppins-Light';
     }
 }
 
