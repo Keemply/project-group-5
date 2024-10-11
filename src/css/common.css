@@ -21,6 +21,10 @@ body {
     background-color: var(--WHITE);
 }
 
+.container {
+    box-sizing: border-box;
+}
+
 /* Контейнер та секції */
 @media screen and (max-width:359px) {
     .container {
