@@ -1,0 +1,347 @@
+@media screen and (max-width: 360px) {
+  /* Заголовок */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(12, 12, 12, 0.1);
+  }
+
+  /* Лого з кольором */
+  .logo a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #000; /* Основний колір тексту */
+    font-weight: bold;
+  }
+
+  .logo a span {
+    color: #00b068; /* Accent Green для частини "JEFFERSON" */
+    font-weight: bold;
+  }
+  .dot {
+    color: #00b068; /* Зелений колір для крапки */
+  }
+
+  /* Приховуємо навігацію на мобільних */
+  .nav {
+    display: none;
+  }
+
+  /* Кнопка бургер-меню */
+  .menu-toggle {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .menu-icon {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #000;
+    position: relative;
+  }
+
+  .menu-icon::before,
+  .menu-icon::after {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+  }
+
+  .menu-icon::before {
+    top: -8px;
+  }
+
+  .menu-icon::after {
+    top: 8px;
+  }
+
+  /* Коли навігація активна (бургер-меню відкрито) */
+  .nav.active {
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav__list li {
+    margin: 10px 0;
+  }
+
+  .nav__list a {
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  /* Заголовок */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(12, 12, 12, 0.1);
+  }
+
+  /* Лого з кольором */
+  .logo a {
+    font-size: 18px;
+    color: #000; /* Основний колір тексту */
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .logo a span {
+    color: #00b068; /* Accent Green для частини "JEFFERSON" */
+    font-weight: bold;
+  }
+  .dot {
+    color: #00b068; /* Зелений колір для крапки */
+  }
+
+  /* Приховуємо навігацію на екрані 375px */
+  .nav {
+    display: none;
+  }
+
+  /* Бургер-кнопка все ще видима */
+  .menu-toggle {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .menu-icon {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #000;
+    position: relative;
+  }
+
+  .menu-icon::before,
+  .menu-icon::after {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+  }
+
+  .menu-icon::before {
+    top: -8px;
+  }
+
+  .menu-icon::after {
+    top: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* Заголовок */
+  .header {
+    padding: 26px 0;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(12, 12, 12, 0.1);
+  }
+
+  /* Лого */
+  .logo a {
+    font-size: 24px;
+    color: #000; /* Основний колір тексту */
+    text-decoration: none; /* Прибираємо підкреслення */
+  }
+
+  .logo a span {
+    color: #00b068; /* Accent Green для частини "JEFFERSON" */
+    font-weight: bold;
+  }
+  .dot {
+    color: #00b068; /* Зелений колір для крапки */
+  }
+
+  /* Навігаційне меню */
+  .nav {
+    display: block; /* Показуємо навігацію */
+  }
+
+  .nav__list {
+    display: flex;
+    justify-content: flex-end; /* Вирівнюємо вправо */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav__list li {
+    margin-left: 40px; /* Відстань між пунктами меню */
+  }
+
+  .nav__list a {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    color: var(--black);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .nav__list a:hover {
+    color: #4d5ae5; /* Колір при наведенні */
+  }
+
+  /* Вирівнювання меню */
+  .nav__list {
+    margin-right: 32px; /* Відстань від правого краю */
+  }
+
+  /* Бургер-кнопка ховається */
+  .menu-toggle {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header {
+    display: flex; /* Вирівнюємо елементи в ряд */
+    justify-content: space-between; /* Вирівнюємо елементи з пробілом */
+    align-items: center; /* Центруємо по вертикалі */
+    padding: 20px 32px; /* Внутрішні відступи */
+    background-color: #fff; /* Білий фон */
+  }
+
+  .logo a {
+    font-size: 24px;
+    color: #000; /* Основний колір тексту */
+    text-decoration: none; /* Прибираємо підкреслення */
+  }
+
+  .logo a span {
+    color: #00b068; /* Accent Green для частини "JEFFERSON" */
+    font-weight: bold;
+  }
+  .dot {
+    color: #00b068; /* Зелений колір для крапки */
+  }
+
+  .nav__list {
+    display: flex; /* Вирівнюємо меню в ряд */
+    list-style: none; /* Прибираємо маркери */
+    padding: 0; /* Прибираємо відступи */
+    margin: 0; /* Прибираємо зовнішні відступи */
+  }
+
+  .nav__list li {
+    margin-right: 40px; /* Відстань між елементами меню */
+  }
+
+  .nav__list a {
+    font-weight: 300; /* Вага шрифту */
+    font-size: 16px; /* Розмір шрифту */
+    line-height: 150%; /* Висота рядка */
+    letter-spacing: 0.03em; /* Відстань між літерами */
+    color: var(--black); /* Колір тексту меню */
+    text-decoration: none; /* Без підкреслення */
+  }
+
+  .nav__list a:hover {
+    color: var(--accet-green); /* Колір при наведенні */
+  }
+
+  .menu-toggle {
+    display: none; /* Сховати кнопку на декстопі */
+  }
+}
+
+/* -----------------Mobile----------------- */
+
+.header-mobile-menu-container {
+  display: none; /* Сховати меню за замовчуванням */
+  position: fixed; /* Фіксована позиція */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9); /* Злегка прозорий фон */
+  z-index: 1000; /* Високий z-index, щоб перекрити інші елементи */
+  justify-content: center; /* Вирівнювання по центру */
+  align-items: center; /* Вертикальне вирівнювання */
+}
+
+.header-mobile-menu {
+  display: flex;
+  flex-direction: column; /* Вертикальне вирівнювання елементів меню */
+  align-items: center; /* Центрування елементів */
+}
+
+.header-mobile-menu-close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #000;
+  margin-bottom: 20px; /* Відстань до меню */
+}
+
+.logo a {
+  font-size: 18px;
+  color: #000; /* Основний колір тексту */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logo a span {
+  color: #00b068; /* Accent Green для частини "JEFFERSON" */
+  font-weight: bold;
+}
+.dot {
+  color: #00b068; /* Зелений колір для крапки */
+}
+
+/* Стилі навігації */
+.header-mobile-navigation {
+  display: flex;
+  flex-direction: column; /* Вертикальне вирівнювання пунктів меню */
+}
+
+.header-mobile-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header-mobile-item {
+  margin: 10px 0;
+}
+
+.header-mobile-link {
+  text-decoration: none;
+  color: #000; /* Колір тексту */
+}
