@@ -1,0 +1,20 @@
+/* Fonts */
+@font-face {
+    font-family: 'impact';
+    src: url(../fonts/impact.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins-Light';
+    src: url(../fonts/Poppins-Light.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url(../fonts/Poppins-Medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url(../fonts/Poppins-Regular.ttf) format('truetype');
+}

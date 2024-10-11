@@ -28,10 +28,12 @@
         max-width: 360px;
         margin: 0 auto;
         padding: 0px 20px;
+
     }
 
     section {
         margin-bottom: 80px;
+        font-family: 'Poppins-Light';
     }
 }
 
