@@ -86,75 +86,79 @@
 
 @media screen and (min-width: 768px) {
     .title-reviews {
-            font-family: "Impact", sans-serif;
-    
-            font-size: 108px;
-    
-            /* line-height: 124px; */
-            line-height: 1.14815;
-            letter-spacing: 0.02em;
-        }
-    
-        .section-reviews {
-            margin-top: 60px;
-            padding: 0px 32px;
-            max-width: 768px;
-            height: 472px;
-        }
-    
-        .swiper-container {
-            margin-top: 60px;
-            width: 704px;
-            height: 288px;
-        }
-    
-        .swiper-wrapper {
-            border-radius: 16px;
-            padding: 32px;
-            width: 704px;
-            height: 224px;
-        }
-    
-        /* .box-button{width: 96px;
+        font-family: "Impact", sans-serif;
+
+        font-size: 108px;
+
+        /* line-height: 124px; */
+        line-height: 1.14815;
+        letter-spacing: 0.02em;
+    }
+
+    .section-reviews {
+        margin-top: 60px;
+        padding: 0px 32px;
+        max-width: 768px;
+        height: 472px;
+    }
+
+    .swiper-container {
+        margin-top: 60px;
+        width: 704px;
+        height: 288px;
+    }
+
+    .swiper-wrapper {
+        border-radius: 16px;
+        padding: 32px;
+        width: 704px;
+        height: 224px;
+    }
+
+    /* .box-button{width: 96px;
                                                         height: 40px;
                                                        
                                                       
                                                   }   */
 
 }
-@media screen and (min-width: 1280px){
+
+@media screen and (min-width: 1280px) {
     .title-reviews {
-            font-family: "Impact", sans-serif;
-    
-            font-size: 108px;
-    
-            /* line-height: 124px; */
-            line-height: 1.14815;
-            letter-spacing: 0.02em;
-            
-            
-              
-        }
-    
-        .section-reviews {
+        font-family: "Impact", sans-serif;
+
+        font-size: 108px;
+
+        /* line-height: 124px; */
+        line-height: 1.14815;
+        letter-spacing: 0.02em;
+
+
+
+    }
+
+    .section-reviews {
         padding: 0px 32px;
-            max-width: 1280px;
-            height: 500px;
-        }
-    
-        .swiper-container {
-            margin-top: 60px;
+        max-width: 1280px;
+        height: 500px;
+    }
+
+    .swiper-container {
+        margin-top: 60px;
         width: 1216px;
-            height: 224px;
-        }
-    
-        .swiper-wrapper {
+        height: 224px;
+    }
+
+    .swiper-wrapper {
         border-radius: 16px;
-            padding: 32px;
-            width: 592px;
-            height: 224px;
-        }
-        .box-button{ margin-top: 24px;
-            width: 120px;
-            height: 48px;}
+        padding: 32px;
+        width: 592px;
+        height: 224px;
+    }
+
+    .box-button {
+        margin-top: 24px;
+        width: 120px;
+        height: 48px;
+    }
 }
