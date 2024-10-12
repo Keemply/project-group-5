@@ -57,18 +57,20 @@
 
 .abaut-text-li::marker {
     color: rgb(4, 159, 4);
+   
 
 }
 
 @media screen and (max-width:360px) {
     .container-abaut-me {
         max-width: 360px;
-
+        margin: 0 auto;
     }
 
     .section-abaut-me {
         margin: 0 auto;
         padding: 0 20px 0 20px;
+        margin-bottom: 80px;
     }
 
     .logo-abaut-me-to {
@@ -100,10 +102,12 @@
     .section-abaut-me {
         margin: 0 auto;
         padding: 0 20px 0 20px;
+        margin-bottom: 80px;
     }
 
     .container-abaut-me {
         width: 360px;
+        margin: 0 auto;
 
     }
 
@@ -139,11 +143,14 @@
     .section-abaut-me {
         margin: 0 auto;
         padding: 0 32px 0 32px;
+        margin-bottom: 124px;
     }
 
     .container-abaut-me {
         width: 768px;
-
+        margin: 0 auto;
+     background-image: url(../images/about-me-background-tab-2x.png)
+     
     }
 
     .logo-abaut-me-to {
@@ -240,4 +247,44 @@
 
 }
 
-@media screen and (min-width:1280px) {}
+@media screen and (min-width: 1280px) {
+
+    .section-abaut-me {
+        margin: 0 auto;
+        padding: 0 32px 0 32px;
+        margin-bottom: 164px;
+    }
+
+    .container-abaut-me {
+        width: 1280px;
+        margin: 0 auto;
+        background-image: url(../images/about-me-background-2x.png)
+
+    }
+
+    .images-abaut-me {
+        border-radius: 16px;
+        width: 384px;
+        height: 448px;
+        padding: 312px 136px 40px 240px;
+
+    }
+
+    .cont-me-to {
+        padding-left: 240px;
+    }
+
+    .text-about-me {
+        width: 488px;
+
+    }
+
+    .abaut-me-text {
+        width: 384px;
+
+    }
+
+    .cont-me-to-role {
+        margin-left: 136px;
+    }
+}
