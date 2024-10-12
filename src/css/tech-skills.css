@@ -49,7 +49,23 @@
   color: var(--BLACK);
   animation: caterpillar 1s ease-in-out infinite;
   transition: color 0.3s ease;
+  position: relative;
 }
+/* .tech-skills__text::after {
+  content: '';
+  position: absolute;
+  left: -30px;
+  top: 19px;
+  right: 0;
+  border-radius: 2px;
+  height: 8px;
+  width: 8px;
+  background-color: var(--ACCET-GREEN);
+}
+
+.tilted .tech-skills__text::after {
+  background-color: var(--BLACK);
+} */
 
 .tilted .tech-skills__text {
   color: var(--ACCET-GREEN);
@@ -57,9 +73,23 @@
 
 .tech-skills__block {
   flex-shrink: 0;
-  margin-right: 56px;
+  margin-right: 24px;
+  gap: 24px;
   display: flex;
   align-items: center;
+}
+.tech-skills__block:last-child {
+  margin-right: 0px;
+}
+.tech-skills__icon {
+  width: 8px;
+  background-color: var(--ACCET-GREEN);
+  height: 8px;
+  border-radius: 2px;
+}
+
+.tilted .tech-skills__icon {
+  background-color: var(--BLACK);
 }
 
 @media screen and (min-width: 768px) {
