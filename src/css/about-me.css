@@ -49,11 +49,14 @@
     color: #292929;
 }
 
-.about-me-ul {
+.about-me-ul  {
     /* list-style-type: none; */
     padding-left: 20px;
     margin: 0;
+    list-style: disc;
 }
+
+ 
 
 .abaut-text-li::marker {
     color: rgb(4, 159, 4);
@@ -62,10 +65,10 @@
 }
 
 @media screen and (max-width:360px) {
-    .container-abaut-me {
+    /* .container-abaut-me {
         max-width: 360px;
         margin: 0 auto;
-    }
+    } */
 
     .section-abaut-me {
         margin: 0 auto;
@@ -88,7 +91,7 @@
 
     .text-about-me {
         
-        width: 320px;
+        max-width: 320px;
         padding: 12px 0;
     }
 
@@ -105,11 +108,11 @@
         margin-bottom: 80px;
     }
 
-    .container-abaut-me {
+    /* .container-abaut-me {
         width: 360px;
         margin: 0 auto;
 
-    }
+    } */
 
     .logo-abaut-me-to {
         width: 217px;
@@ -147,11 +150,19 @@
     }
 
     .container-abaut-me {
-        width: 768px;
-        margin: 0 auto;
-     background-image: url(../images/about-me-background-tab-2x.png)
+        /* width: 768px;
+        margin: 0 auto; */
+     background-image: url(../images/about-me-background-tab.png)
      
     }
+
+        @media (min-resolution: 192dpi) {
+            .container-abaut-me {
+                /* width: 768px;
+                margin: 0 auto; */
+                background-image: url(../images/about-me-background-tab-2x.png)
+            }
+        }
 
     .logo-abaut-me-to {
 
@@ -256,11 +267,19 @@
     }
 
     .container-abaut-me {
-        width: 1280px;
-        margin: 0 auto;
-        background-image: url(../images/about-me-background-2x.png)
+        /* width: 1280px;
+        margin: 0 auto; */
+        background-image: url(../images/about-me-background.png)
 
     }
+
+        @media (min-resolution: 192dpi) {
+            .container-abaut-me {
+                /* max-width: 1280px;
+                margin: 0 auto; */
+                background-image: url(../images/about-me-background-2x.png)
+            }
+        }
 
     .images-abaut-me {
         border-radius: 16px;
