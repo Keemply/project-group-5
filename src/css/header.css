@@ -1,6 +1,7 @@
 .header {
   width: 100%;
   height: 64px;
+  margin: 0 auto;
 }
 @media screen and (max-width: 360px) {
   /* Заголовок */
@@ -286,51 +287,61 @@
 
 /* -----------------Mobile----------------- */
 
-.header-mobile-menu-container {
-  display: none; /* Сховати меню за замовчуванням */
-  position: fixed; /* Фіксована позиція */
+/* Мобільне меню */
+.mobile-menu {
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.9); /* Злегка прозорий фон */
-  z-index: 1000; /* Високий z-index, щоб перекрити інші елементи */
-  justify-content: center; /* Вирівнювання по центру */
-  align-items: center; /* Вертикальне вирівнювання */
-}
-
-.header-mobile-menu {
+  background-color: #fff;
   display: flex;
-  flex-direction: column; /* Вертикальне вирівнювання елементів меню */
-  align-items: center; /* Центрування елементів */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
 }
 
-.header-mobile-menu-close {
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  color: #000;
-  margin-bottom: 20px; /* Відстань до меню */
-}
-
-/* Стилі навігації */
-.header-mobile-navigation {
-  display: flex;
-  flex-direction: column; /* Вертикальне вирівнювання пунктів меню */
-}
-
-.header-mobile-list {
+.mobile-menu__list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  text-align: center;
 }
 
-.header-mobile-item {
-  margin: 10px 0;
+.mobile-menu__list li {
+  margin: 20px 0;
 }
 
-.header-mobile-link {
+.mobile-menu__list a {
+  font-size: 24px;
   text-decoration: none;
-  color: #000; /* Колір тексту */
+  color: #333;
+}
+
+.close-menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Анімація появи меню */
+.mobile-menu.active {
+  transform: translateY(0);
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
 }

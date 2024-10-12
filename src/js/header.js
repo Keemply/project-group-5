@@ -1,20 +1,22 @@
+// Отримуємо елементи меню і кнопки
 const menuToggle = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.header-mobile-menu-container');
-const closeButton = document.querySelector('.header-mobile-menu-close');
+const mobileMenu = document.querySelector('.mobile-menu');
+const closeMenuButton = document.querySelector('.close-menu');
+const menuLinks = document.querySelectorAll('.mobile-menu__list a');
 
-// Відкриваємо меню
+// Відкриття меню
 menuToggle.addEventListener('click', () => {
-  nav.style.display = 'flex'; // Відображаємо мобільне меню
+  mobileMenu.classList.add('active');
 });
 
-// Закриваємо меню
-closeButton.addEventListener('click', () => {
-  nav.style.display = 'none'; // Сховати мобільне меню
+// Закриття меню по кнопці
+closeMenuButton.addEventListener('click', () => {
+  mobileMenu.classList.remove('active');
 });
 
-// Закриваємо меню після вибору пункту
-document.querySelectorAll('.header-mobile-list a').forEach(link => {
+// Закриття меню при натисканні на посилання
+menuLinks.forEach(link => {
   link.addEventListener('click', () => {
-    nav.style.display = 'none'; // Сховати мобільне меню
+    mobileMenu.classList.remove('active');
   });
 });
