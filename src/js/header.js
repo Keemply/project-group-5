@@ -1,22 +1,20 @@
-// Отримуємо елементи меню і кнопки
 const menuToggle = document.querySelector('.menu-toggle');
 const mobileMenu = document.querySelector('.mobile-menu');
-const closeMenuButton = document.querySelector('.close-menu');
-const menuLinks = document.querySelectorAll('.mobile-menu__list a');
+const menuClose = document.querySelector('.menu-close');
 
-// Відкриття меню
+// Відкриття мобільного меню
 menuToggle.addEventListener('click', () => {
-  mobileMenu.classList.add('active');
+  mobileMenu.style.display = 'flex';
 });
 
-// Закриття меню по кнопці
-closeMenuButton.addEventListener('click', () => {
-  mobileMenu.classList.remove('active');
+// Закриття мобільного меню
+menuClose.addEventListener('click', () => {
+  mobileMenu.style.display = 'none';
 });
 
 // Закриття меню при натисканні на посилання
-menuLinks.forEach(link => {
+document.querySelectorAll('.mobile-nav a').forEach(link => {
   link.addEventListener('click', () => {
-    mobileMenu.classList.remove('active');
+    mobileMenu.style.display = 'none';
   });
 });
