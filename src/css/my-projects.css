@@ -117,7 +117,7 @@
 /* loader!!! */
 .my-projects__loader {
   width: 60px;
-  height: 40px;
+  height: 30px;
   position: relative;
   display: none;
   --base-color: #263238;
