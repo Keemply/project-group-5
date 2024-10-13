@@ -56,10 +56,9 @@ height: 360px;
     margin-top: 24px;
     position: absolute;
     display: flex;
-    right: 0;
+  
 
-    width: 104px;
-    height: 40px;
+   
     gap: 16px;
 }
 
