@@ -1,9 +1,3 @@
-.header {
-  width: 100%;
-  height: 64px;
-  margin: 0 auto;
-}
-
 @media screen and (max-width: 360px) {
   /* Заголовок */
   .header-section {
@@ -126,6 +120,9 @@
   .dot {
     color: #00b068; /* Зелений колір для крапки */
   }
+  .action-button {
+    display: none;
+  }
 
   /* Приховуємо навігацію на екрані 375px */
   .nav {
@@ -182,6 +179,7 @@
     font-size: 24px;
     color: #000; /* Основний колір тексту */
     text-decoration: none; /* Прибираємо підкреслення */
+    margin-left: 32px;
   }
 
   .logo a span {
@@ -190,6 +188,9 @@
   }
   .dot {
     color: #00b068; /* Зелений колір для крапки */
+  }
+  .action-button {
+    display: none;
   }
 
   /* Навігаційне меню */
@@ -321,6 +322,7 @@
   width: 100%;
   height: 100vh;
   background-color: #fff;
+  background-image: url(../images/Hero-decor-bg-mob-1x.png);
   display: none; /* Приховано за замовчуванням */
   flex-direction: column;
   justify-content: center;
