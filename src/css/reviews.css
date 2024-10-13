@@ -19,16 +19,16 @@
 
 .swiper-container {
     margin-top: 40px;
-
+display: flex;
+    align-items: center;
+    justify-content: center;
 
 
 }
 
 .swiper-slide {
 
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
+    
     background: #e4e5e6;
    
     border-radius: 16px;
@@ -51,22 +51,28 @@
 }
 
 .box-button {
+    
+display: flex;
+    flex-direction: column;
+    /* Розташування кнопок вертикально */
+    align-items: center;
+    /* Вирівнювання по центру */
     margin-top: 24px;
-    position: absolute;
-    display: flex;   
-    gap: 16px;
+    /* Відстань від відгуків до кнопок */
 }
 
 
 
 
 .button-reviews {
-
     border: 1px solid #292929;
     border-radius: 8px;
     padding: 12px;
     width: 48px;
     height: 40px;
+    margin-bottom: 16px;     /* Відстань між кнопками */
+    background-color: white;  /* Задаємо фон, щоб кнопки були видні */
+    cursor: pointer; 
 }
 
 
@@ -226,7 +232,7 @@ font-family: "Poppins", sans-serif;
 
 @media screen and (min-width: 1280px) {
     .title-reviews {
-   
+    
             font-family: "Impact", sans-serif;
         font-size: 108px;
         font-family: "Impact", sans-serif;
@@ -247,9 +253,8 @@ font-family: "Poppins", sans-serif;
 
     .swiper-container {
         margin-top: 60px;
-
-        
-       
+      reviews.1
+        max-width: 1216px;
     }
 
     /* .swiper-wrapper {
@@ -267,7 +272,7 @@ font-family: "Poppins", sans-serif;
 
    .swiper-slide{border-radius: 16px;
     padding: 32px;
-    max-width: 592px;
+    width: 592px;
     height: 224px;}
 
     }
