@@ -128,7 +128,10 @@ word-wrap: break-word;
 
 @media screen and (min-width: 768px) {
     .title-reviews {
+
         text-align: center;
+        font-family: "Impact", sans-serif;
+        font-size: 108px;
         font-family: "Impact", sans-serif;
         font-size: 108px;
         /* line-height: 124px; */
@@ -194,6 +197,23 @@ font-family: "Poppins", sans-serif;
         line-height: 1.5;
         letter-spacing: 0.03em;
         color: #292929;
+        margin-top: 60px;
+        padding: 0px 32px;
+        max-width: 768px;
+        height: 472px;
+    }
+
+    .swiper-container {
+        margin-top: 60px;
+        width: 704px;
+        height: 288px;
+    }
+
+    .swiper-wrapper {
+        border-radius: 16px;
+        padding: 32px;
+        width: 704px;
+        height: 224px;
     }
 
     /* .box-button{width: 96px;
@@ -208,6 +228,8 @@ font-family: "Poppins", sans-serif;
     .title-reviews {
    
             font-family: "Impact", sans-serif;
+        font-size: 108px;
+        font-family: "Impact", sans-serif;
         font-size: 108px;
         /* line-height: 124px; */
         line-height: 1.14815;
@@ -225,19 +247,35 @@ font-family: "Poppins", sans-serif;
 
     .swiper-container {
         margin-top: 60px;
+
         
        
     }
 
     /* .swiper-wrapper {
+        width: 1216px;
+        height: 224px;
+    }
+
+    .swiper-wrapper {
         border-radius: 16px;
         padding: 32px;
         width: 592px;
         height: 224px;
+
     } */
 
    .swiper-slide{border-radius: 16px;
     padding: 32px;
     max-width: 592px;
     height: 224px;}
+
+    }
+
+    .box-button {
+        margin-top: 24px;
+        width: 120px;
+        height: 48px;
+    }
+
 }
