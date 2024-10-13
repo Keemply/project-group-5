@@ -1,0 +1,281 @@
+.section-reviews {
+    margin-top: 40px;
+    padding: 0px 20px;
+    max-width: 360px;
+    height: 464px;
+    
+}
+
+.title-reviews {
+    font-family: "Impact", sans-serif;
+    font-weight: 400;
+    font-size: 52px;
+    text-align: center;
+    line-height: 1.23077;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #292929;
+}
+
+.swiper-container {
+    margin-top: 40px;
+
+
+
+}
+
+.swiper-slide {
+
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    background: #e4e5e6;
+   
+    border-radius: 16px;
+        padding: 32px;
+      max-width: 320px;
+      height: 296px;
+
+        
+
+}
+
+
+
+.swiper-wrapper {
+    margin-bottom: 24px;
+    border-radius: 16px;
+    padding: 32px;
+
+
+}
+
+.box-button {
+    margin-top: 24px;
+    position: absolute;
+    display: flex;   
+    gap: 16px;
+}
+
+
+
+
+.button-reviews {
+
+    border: 1px solid #292929;
+    border-radius: 8px;
+    padding: 12px;
+    width: 48px;
+    height: 40px;
+}
+
+
+
+
+.swiper-button-disabled {
+    opacity: 0.5;
+    /* Задизейблені кнопки */
+    pointer-events: none;
+    /* Заборонити взаємодію */
+}
+
+#error-message {
+    /* color: red; */
+    /* Колір для повідомлення про помилку */
+    text-align: center;
+}
+
+.review {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+
+white-space: normal;
+word-wrap: break-word;
+    /* line-height: 24px; */
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: #292929;
+
+
+}
+
+.author-photo {
+    border-radius: 24px;
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+}
+
+.author {
+
+    font-weight: 600;
+    font-size: 16px;
+
+    /* line-height: 24px; */
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: #292929;
+}
+
+.review-author {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+}
+
+/* ======================768========================= */
+
+@media screen and (min-width: 768px) {
+    .title-reviews {
+
+        text-align: center;
+        font-family: "Impact", sans-serif;
+        font-size: 108px;
+        font-family: "Impact", sans-serif;
+        font-size: 108px;
+        /* line-height: 124px; */
+        line-height: 1.14815;
+        letter-spacing: 0.02em;
+    }
+
+    .section-reviews {
+        padding: 0px 32px;
+           max-width: 768px;
+            height: 472px;
+    }
+
+
+    .swiper-container {
+        margin-top: 60px;
+       max-width: 704px;
+
+       
+    }
+
+    /* .swiper-wrapper {
+    
+        
+    } */
+
+    .swiper-slide {
+        border-radius: 16px;
+        padding: 32px;
+        display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #e4e5e6;
+        max-width: 704px;
+            height: 224px;
+       
+    }
+
+    .review {
+       font-family: "Poppins", sans-serif;
+font-weight: 300;
+font-size: 16px;
+/* line-height: 24px; */ 
+line-height: 1.5;
+letter-spacing: 0.03em;
+color: #292929;
+
+
+    }
+.review-author{margin-top: 24px;}
+    .author-photo {
+        border-radius: 24px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .author {
+font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+
+        /* line-height: 24px; */
+        line-height: 1.5;
+        letter-spacing: 0.03em;
+        color: #292929;
+        margin-top: 60px;
+        padding: 0px 32px;
+        max-width: 768px;
+        height: 472px;
+    }
+
+    .swiper-container {
+        margin-top: 60px;
+        width: 704px;
+        height: 288px;
+    }
+
+    .swiper-wrapper {
+        border-radius: 16px;
+        padding: 32px;
+        width: 704px;
+        height: 224px;
+    }
+
+    /* .box-button{width: 96px;
+                                                        height: 40px;
+                                                       
+                                                      
+                                                  }   */
+
+}
+
+@media screen and (min-width: 1280px) {
+    .title-reviews {
+   
+            font-family: "Impact", sans-serif;
+        font-size: 108px;
+        font-family: "Impact", sans-serif;
+        font-size: 108px;
+        /* line-height: 124px; */
+        line-height: 1.14815;
+        letter-spacing: 0.02em;
+
+
+
+    }
+
+    .section-reviews {
+        padding: 0px 32px;
+        max-width: 1280px;
+        height: 500px;
+    }
+
+    .swiper-container {
+        margin-top: 60px;
+
+        
+       
+    }
+
+    /* .swiper-wrapper {
+        width: 1216px;
+        height: 224px;
+    }
+
+    .swiper-wrapper {
+        border-radius: 16px;
+        padding: 32px;
+        width: 592px;
+        height: 224px;
+
+    } */
+
+   .swiper-slide{border-radius: 16px;
+    padding: 32px;
+    max-width: 592px;
+    height: 224px;}
+
+    }
+
+    .box-button {
+        margin-top: 24px;
+        width: 120px;
+        height: 48px;
+    }
+
+}
