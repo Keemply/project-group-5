@@ -3,6 +3,7 @@
   height: 64px;
   margin: 0 auto;
 }
+
 @media screen and (max-width: 360px) {
   /* Заголовок */
   .header-section {
@@ -254,6 +255,31 @@
   }
   .dot {
     color: #00b068; /* Зелений колір для крапки */
+  }
+
+  /* Стилі для кнопки між логотипом і меню */
+  .action-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00b068; /* зелений колір */
+    color: #fff; /* білий колір тексту */
+    border: none;
+    border-radius: 50%; /* кругла форма кнопки */
+    width: 48px; /* ширина, як на макеті */
+    height: 48px; /* висота, як на макеті */
+    cursor: pointer;
+    font-size: 16px; /* розмір шрифту */
+    line-height: 1;
+    transition: background-color 0.3s ease;
+  }
+
+  .action-button:hover {
+    background-color: #008a52; /* темніший зелений при наведенні */
+  }
+
+  .action-button span {
+    display: none; /* Приховуємо текст, оскільки на макеті він не відображається */
   }
 
   .nav__list {

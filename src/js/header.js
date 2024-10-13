@@ -18,3 +18,7 @@ document.querySelectorAll('.mobile-nav a').forEach(link => {
     mobileMenu.style.display = 'none';
   });
 });
+
+document.querySelector('.action-button').addEventListener('click', function () {
+  alert('Button clicked!');
+});
