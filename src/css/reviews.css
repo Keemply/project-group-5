@@ -58,7 +58,9 @@
     align-items: center;
     /* Вирівнювання по центру */
     margin-top: 24px;
-    /* Відстань від відгуків до кнопок */
+    position: absolute;
+    display: flex;
+    gap: 16px;
 }
 
 
@@ -259,7 +261,7 @@
 
     .swiper-container {
         margin-top: 60px;
-        max-width: 1216px;
+
     }
 
     /* .swiper-wrapper {
@@ -278,7 +280,7 @@
     .swiper-slide {
         border-radius: 16px;
         padding: 32px;
-        width: 592px;
+        max-width: 592px;
         height: 224px;
     }
 
