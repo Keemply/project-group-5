@@ -72,6 +72,10 @@ font-family: "Poppins",
     text-align: center;
 }
 
+.social-links-list a:hover {
+    color: #14c57c;
+}
+
 
 /* @media screen and (min-width:360px) {
     footer {
