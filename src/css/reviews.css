@@ -19,16 +19,16 @@
 
 .swiper-container {
     margin-top: 40px;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 
 }
 
 .swiper-slide {
 
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
+
     background: #e4e5e6;
 
     border-radius: 16px;
@@ -51,6 +51,12 @@
 }
 
 .box-button {
+
+    display: flex;
+    flex-direction: column;
+    /* Розташування кнопок вертикально */
+    align-items: center;
+    /* Вирівнювання по центру */
     margin-top: 24px;
     position: absolute;
     display: flex;
@@ -61,12 +67,16 @@
 
 
 .button-reviews {
-
     border: 1px solid #292929;
     border-radius: 8px;
     padding: 12px;
     width: 48px;
     height: 40px;
+    margin-bottom: 16px;
+    /* Відстань між кнопками */
+    background-color: white;
+    /* Задаємо фон, щоб кнопки були видні */
+    cursor: pointer;
 }
 
 
@@ -251,8 +261,6 @@
 
     .swiper-container {
         margin-top: 60px;
-
-
 
     }
 
