@@ -1,49 +1,66 @@
 <section class="section-address">
-    <h2 class="heder">let’s <span class="logo">work
-            together</span></h2>
-    <div class="address-conteiner">
-        <h3>Contact me to transform your ideas into exceptional solutions.</h3>
-        <address class="address">
-            <ul class="address-list">
-                <li class="address-item">
-                    <a class="address-link" href="tel:+380904567890">+38 090 456 78 90</a>
-                </li>
-                <li class="address-item">
-                    <a class="address-link" href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a>
-                </li>
-                <li class="address-item">
-                    <a class="address-link"
-                        href="https://www.google.com/maps/place/%D0%9D%D1%8C%D1%8E-%D0%99%D0%BE%D1%80%D0%BA,+%D0%A1%D0%A8%D0%90/@40.6970193,-74.3093248,10z/data=!3m1!4b1!4m6!3m5!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!8m2!3d40.7127753!4d-74.0059728!16zL20vMDJfMjg2?entry=ttu&g_ep=EgoyMDI0MTAwNS4yIKXMDSoASAFQAw%3D%3D">USA,
-                        New York</a>
-                </li>
-            </ul>
-
+    <picture>
+        <source srcset="/images/work-together-backround-tab.png 1x, /images/work-together-backround-tab-2x.png 2x" media="(min-width: 768px)">
+        <source srcset="/images/work-together-backround.png 1x, /images/work-together-backround-2x.png 2x"
+            media="(min-width: 1280px)">
+            <img class="address-img" src="/images/work-together-backround-tab.png" alt="fon">
+    </picture>
+    <div>
+        <div>
+            <h2 class="heder">let’s <span class="logo">work together</span></h2>
+            <div class="address-conteiner">
+                <p class="address-text">Contact me to transform your ideas into exceptional solutions.</p>
+                <address class="address">
+                    <ul class="address-list">
+                        <li class="address-item">
+                            <svg class="address-icon" width="24" height="24">
+                                <use href="/images/icon.svg#icon-phone"></use>
+                            </svg>
+                            <a class="address-link" href="tel:+380904567890">+38 090 456 78 90</a>
+                        </li>
+                        <li class="address-item">
+                            <svg class="address-icon" width="24" height="24">
+                                <use href="/images/icon.svg#icon-emeil"></use>
+                            </svg>
+                            <a class="address-link" href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a>
+                        </li>
+                        <li class="address-item">
+                            <svg class="address-icon" width="24" height="24">
+                                <use use href="/images/icon.svg#icon-adress"></use>
+                            </svg>
+                            <a class="address-link" href="https://www.google.com/maps">USA, New York</a>
+                        </li>
+                    </ul>
+            </div>     
             <div class="address-conteiner-form">
-                <form class="address-form">
+                <form class="address-form" id="contactForm">
                     <div class="address-model">
                         <div class="form-email">
-                            <input class="form-email-input" id="email" type="email" name="Your email*"
-                                placeholder="Your email*">
+                            <input class="form-email-input" id="email" type="email" name="Your email*" placeholder="Your email*">
                         </div>
                         <div class="form-message">
-                            <textarea name="user-comment" id="user-comment" class="form-message-text"
-                                placeholder="Message"></textarea>
+                            <textarea name="user-comment" id="message" class="form-message-text" placeholder="Message"></textarea>
                         </div>
                     </div>
-                    <button class="address-btn">SEND MESSAGE</button>
+                    <button class="address-btn" type="submit">SEND MESSAGE</button>
                 </form>
             </div>
-        </address>
+            </address>
+        </div>
+
     </div>
 </section>
-<div class="backdrop  ">
+
+<div class="backdrop " id="backdrop"> 
     <div class="model">
-        <button type="button" class="model-close" id="closeModal">
-            <svg class="model-close-icon" height="12" width="12">
-                <use class="model-close-wrap" href=""></use>
+        <button type="button" class="model-close" id="closeModal"> 
+            <svg class="icon-x" height="12" width="12">
+                <use href="/images/icon.svg#icon-x"></use>
             </svg>
         </button>
-        <h4 class="model-tytle" id="modalTitle"></h4>
-        <p class="model-text" id="modalText"></p>
+        <h4 class="model-tytle" id="modalTitle"> 
+        </h4>
+        <p class="model-text" id="modalText">
+        </p>
     </div>
 </div>

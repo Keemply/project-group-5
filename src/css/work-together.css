@@ -2,6 +2,10 @@
     padding: 80px 20px;
 }
 
+.address-img{
+    display: none;
+}
+
 .heder {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 400;
@@ -24,16 +28,6 @@
 
 }
 
-h3 {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 156%;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #292929;
-}
-
 .address {}
 
 .address-list {
@@ -41,6 +35,19 @@ h3 {
     flex-wrap: wrap;
     gap: 16px;
     padding-bottom: 40px;
+}
+
+.address-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.address-icon{
+    
+    
+    
+    
 }
 
 .address-link {
@@ -75,8 +82,6 @@ h3 {
 }
 
 .form-email {
-    width: 320px;
-
 }
 
 .form-email-input {
@@ -86,8 +91,8 @@ h3 {
     letter-spacing: 0.03em;
     border-radius: 8px;
     color: #292929;
-    width: 300px;
-    height: 24px;
+    width: 100%;
+    
     padding-left: 16px;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -104,14 +109,11 @@ h3 {
 .form-message {}
 
 .form-message-text {
-    width: 100%;
-    height: 128px;
     font-family: var(--font-family);
     font-weight: 300;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.03em;
-    width: 300px;
     color: #292929;
     padding: 12px;
     resize: none;
@@ -119,6 +121,8 @@ h3 {
     border: none;
     border-radius: 8px;
     transition: background-color 0.3s;
+    width: 100%;
+    height: 128px;
 }
 
 .form-message-text:hover {
@@ -129,7 +133,7 @@ h3 {
 .address-btn {
     border-radius: 8px;
     padding: 12px 24px;
-    width: 320px;
+    width: 100%;
     height: 48px;
     background-color: #00B068;
     color: #F0F0F0;
@@ -191,9 +195,15 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1e32e5;
     padding: 0;
     cursor: pointer;
+    border: none;
+}
+.icon-x {
+    width: 12px;
+    height: 12px;
+    fill: #292929;
+    
 }
 
 .model-tytle {
@@ -218,7 +228,79 @@ h3 {
 }
 
 @media only screen and (min-width: 768px) {
+    .section-address {
+    padding-top: 164px;
+}
+
+.address-img{
+    display: inline;
+    width: 526px;
+    height: 408px;
+}
+
+.heder {
+    font-size: 108px;
+    line-height: 115%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #292929;
+    padding-bottom: 60px;
+}
+
+.address-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #292929;
     
+}
+
+.address {}
+
+.address-list {}
+
+.address-item {}
+
+.address-icon {}
+
+.address-link {}
+
+.address-conteiner-form {}
+
+.address-form {}
+
+.address-model {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+}
+
+.form-email {}
+
+.form-email-input {}
+
+.form-message {}
+
+.form-message-text {}
+
+.address-btn {}
+
+.backdrop {}
+
+.model {}
+
+.model-close {}
+
+.icon-x {}
+
+.model-tytle {}
+
+.model-text {}
+
 }
 
 @media only screen and (min-width: 1280px) {}
