@@ -5,8 +5,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #fff;
-    border-bottom: 1px solid rgba(12, 12, 12, 0.1);
+    background-color: #f0f0f0; /* Білий фон */
   }
 
   /* Лого з кольором */
@@ -23,6 +22,9 @@
   }
   .dot {
     color: #00b068; /* Зелений колір для крапки */
+  }
+  .action-button {
+    display: none;
   }
 
   /* Приховуємо навігацію на мобільних */
@@ -101,8 +103,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #fff;
-    border-bottom: 1px solid rgba(12, 12, 12, 0.1);
+    background-color: #f0f0f0; /* Білий фон */
   }
 
   /* Лого з кольором */
@@ -170,8 +171,7 @@
   /* Заголовок */
   .header-section {
     padding: 26px 0;
-    background-color: #fff;
-    border-bottom: 1px solid rgba(12, 12, 12, 0.1);
+    background-color: #f0f0f0; /* Білий фон */
   }
 
   /* Лого */
@@ -241,7 +241,7 @@
     justify-content: space-between; /* Вирівнюємо елементи з пробілом */
     align-items: center; /* Центруємо по вертикалі */
     padding: 20px 32px; /* Внутрішні відступи */
-    background-color: #fff; /* Білий фон */
+    background-color: #f0f0f0; /* Білий фон */
   }
 
   .logo a {
