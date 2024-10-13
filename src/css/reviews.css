@@ -3,7 +3,7 @@
     padding: 0px 20px;
     max-width: 360px;
     height: 464px;
-    
+
 }
 
 .title-reviews {
@@ -19,24 +19,24 @@
 
 .swiper-container {
     margin-top: 40px;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 
 }
 
 .swiper-slide {
 
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-    background: #e4e5e6;
-   
-    border-radius: 16px;
-        padding: 32px;
-      max-width: 320px;
-      height: 296px;
 
-        
+    background: #e4e5e6;
+
+    border-radius: 16px;
+    padding: 32px;
+    max-width: 320px;
+    height: 296px;
+
+
 
 }
 
@@ -51,9 +51,15 @@
 }
 
 .box-button {
+
+    display: flex;
+    flex-direction: column;
+    /* Розташування кнопок вертикально */
+    align-items: center;
+    /* Вирівнювання по центру */
     margin-top: 24px;
     position: absolute;
-    display: flex;   
+    display: flex;
     gap: 16px;
 }
 
@@ -61,12 +67,16 @@
 
 
 .button-reviews {
-
     border: 1px solid #292929;
     border-radius: 8px;
     padding: 12px;
     width: 48px;
     height: 40px;
+    margin-bottom: 16px;
+    /* Відстань між кнопками */
+    background-color: white;
+    /* Задаємо фон, щоб кнопки були видні */
+    cursor: pointer;
 }
 
 
@@ -90,8 +100,8 @@
     font-weight: 300;
     font-size: 16px;
 
-white-space: normal;
-word-wrap: break-word;
+    white-space: normal;
+    word-wrap: break-word;
     /* line-height: 24px; */
     line-height: 1.5;
     letter-spacing: 0.03em;
@@ -141,16 +151,16 @@ word-wrap: break-word;
 
     .section-reviews {
         padding: 0px 32px;
-           max-width: 768px;
-            height: 472px;
+        max-width: 768px;
+        height: 472px;
     }
 
 
     .swiper-container {
         margin-top: 60px;
-       max-width: 704px;
+        max-width: 704px;
 
-       
+
     }
 
     /* .swiper-wrapper {
@@ -162,26 +172,30 @@ word-wrap: break-word;
         border-radius: 16px;
         padding: 32px;
         display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #e4e5e6;
+        align-items: center;
+        justify-content: center;
+        background: #e4e5e6;
         max-width: 704px;
-            height: 224px;
-       
+        height: 224px;
+
     }
 
     .review {
-       font-family: "Poppins", sans-serif;
-font-weight: 300;
-font-size: 16px;
-/* line-height: 24px; */ 
-line-height: 1.5;
-letter-spacing: 0.03em;
-color: #292929;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        /* line-height: 24px; */
+        line-height: 1.5;
+        letter-spacing: 0.03em;
+        color: #292929;
 
 
     }
-.review-author{margin-top: 24px;}
+
+    .review-author {
+        margin-top: 24px;
+    }
+
     .author-photo {
         border-radius: 24px;
         width: 40px;
@@ -189,7 +203,7 @@ color: #292929;
     }
 
     .author {
-font-family: "Poppins", sans-serif;
+        font-family: "Poppins", sans-serif;
         font-weight: 600;
         font-size: 16px;
 
@@ -226,8 +240,8 @@ font-family: "Poppins", sans-serif;
 
 @media screen and (min-width: 1280px) {
     .title-reviews {
-   
-            font-family: "Impact", sans-serif;
+
+        font-family: "Impact", sans-serif;
         font-size: 108px;
         font-family: "Impact", sans-serif;
         font-size: 108px;
@@ -248,8 +262,6 @@ font-family: "Poppins", sans-serif;
     .swiper-container {
         margin-top: 60px;
 
-        
-       
     }
 
     /* .swiper-wrapper {
@@ -265,17 +277,17 @@ font-family: "Poppins", sans-serif;
 
     } */
 
-   .swiper-slide{border-radius: 16px;
-    padding: 32px;
-    max-width: 592px;
-    height: 224px;}
-
+    .swiper-slide {
+        border-radius: 16px;
+        padding: 32px;
+        max-width: 592px;
+        height: 224px;
     }
 
-    .box-button {
-        margin-top: 24px;
-        width: 120px;
-        height: 48px;
-    }
+}
 
+.box-button {
+    margin-top: 24px;
+    width: 120px;
+    height: 48px;
 }
