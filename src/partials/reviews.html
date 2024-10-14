@@ -1,25 +1,34 @@
- <!-- i -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-<section id="reviews" class="section-reviews">
-    <div class="container">
+<!-- i -->
+<section class="section-reviews">
+  <div class="container">
     <h2 class="title-reviews">Reviews</h2>
-    <div class="swiper-container">
-        <div class="swiper-wrapper" id="reviews-wrapper">
-            <!-- Відгуки будуть додані сюди через JavaScript -->
-        </div>
-        <div class="box-button">
-            <div class="swiper-button-prev button-reviews"></div>
-            <div class="swiper-button-next button-reviews"></div>
-        </div>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <p class="error-message">Not found</p>
+        <!-- Slides -->
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-box">
+        <button class="swiper-button prev swiper-button-disabled">
+          <svg class="swiper-button-svg">
+            <use
+              class="swiper-button-use"
+              href="../svg/rewiews-arrow.svg#icon-arrow-narrow-right"
+            ></use>
+          </svg>
+        </button>
+        <button class="swiper-button next">
+          <svg class="swiper-button-svg">
+            <use
+              class="swiper-button-use"
+              href="../svg/rewiews-arrow.svg#icon-arrow-narrow-right-1"
+            ></use>
+          </svg>
+        </button>
+      </div>
+      <!-- If we need scrollbar -->
     </div>
-    <div id="error-message" style="display: none;">Not found</div>
-
+  </div>
 </section>
-<script src="../js/reviews.js"></script>
-<!-- ====== -->
-   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-   <!-- =========== -->
-
-    </div>
-</section>
-
