@@ -1,8 +1,5 @@
-.section-address {
-    padding: 80px 20px;
-}
 
-.address-img{
+.address-img {
     display: none;
 }
 
@@ -25,7 +22,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
-
 }
 
 .address {}
@@ -41,13 +37,6 @@
     display: flex;
     align-items: center;
     gap: 16px;
-}
-
-.address-icon{
-    
-    
-    
-    
 }
 
 .address-link {
@@ -67,7 +56,6 @@
 
 .address-conteiner-form {}
 
-
 .address-form {
     display: flex;
     flex-direction: column;
@@ -75,13 +63,9 @@
 }
 
 .address-model {
-
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
-}
-
-.form-email {
 }
 
 .form-email-input {
@@ -92,7 +76,6 @@
     border-radius: 8px;
     color: #292929;
     width: 100%;
-    
     padding-left: 16px;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -105,8 +88,6 @@
     outline: none;
     color: #E74A3B;
 }
-
-.form-message {}
 
 .form-message-text {
     font-family: var(--font-family);
@@ -151,10 +132,6 @@
     background-color: #009156;
 }
 
-/* ------- styles model--------------- */
-
-
-
 .backdrop {
     position: fixed;
     top: 0;
@@ -165,6 +142,7 @@
     opacity: 0;
     visibility: hidden;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .is-open {
@@ -174,11 +152,13 @@
 }
 
 .model {
-    position: absolute;
+    position: fixed;
     border: 1px solid var(--light-grey);
     border-radius: 16px;
     padding: 48px 32px;
-    width: 260px;
+    width: 90%;
+        /* Змінюємо ширину на 90% для мобільних */
+    max-width: 400px;
     height: auto;
     background: #F0F0F0;
     top: 50%;
@@ -199,11 +179,11 @@
     cursor: pointer;
     border: none;
 }
+
 .icon-x {
     width: 12px;
     height: 12px;
     fill: #292929;
-    
 }
 
 .model-tytle {
