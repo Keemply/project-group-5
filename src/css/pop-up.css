@@ -27,6 +27,8 @@
 
 }
 
+
+
 .pop-up-container-header {
     color: var(--ACCET-GREEN);
     font-weight: 400;
@@ -68,8 +70,25 @@
 
 }
 
+/* night theme */
+.night-theme .pop-up-background {
+    background-color: #1E2023;
+}
 
+.night-theme .pop-up-container {
+    background-color: #1E2023;
+    border: transparent;
+}
 
+.night-theme .pop-up-container-text {
+    color: var(--WHITE);
+}
+
+.night-theme .pop-up-container-close {
+    stroke: var(--WHITE);
+}
+
+/* End of night theme */
 @media screen and (min-width: 768px) {
     .pop-up-container-button {
         top: 20px;
