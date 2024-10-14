@@ -23,7 +23,7 @@
   .dot {
     color: #00b068; /* Зелений колір для крапки */
   }
-  .action-button {
+  .theme-switcher {
     display: none;
   }
 
@@ -121,7 +121,7 @@
   .dot {
     color: #00b068; /* Зелений колір для крапки */
   }
-  .action-button {
+  .theme-switcher {
     display: none;
   }
 
@@ -189,7 +189,7 @@
   .dot {
     color: #00b068; /* Зелений колір для крапки */
   }
-  .action-button {
+  .theme-switcher {
     display: none;
   }
 
@@ -259,28 +259,84 @@
   }
 
   /* Стилі для кнопки між логотипом і меню */
-  .action-button {
+  .theme-switcher {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #00b068; /* зелений колір */
-    color: #fff; /* білий колір тексту */
-    border: none;
-    border-radius: 50%; /* кругла форма кнопки */
-    width: 48px; /* ширина, як на макеті */
-    height: 48px; /* висота, як на макеті */
+  }
+
+  #theme-toggle {
+    display: none;
+  }
+
+  .theme-label {
+    position: relative;
+    height: 24px;
+    width: 48px;
+    background-color: #e4e5e6;
+    border-radius: 2rem;
+    overflow: hidden;
+    transition: 0.5s ease;
+    left: 20px;
+  }
+
+  .theme-label:hover {
     cursor: pointer;
-    font-size: 16px; /* розмір шрифту */
-    line-height: 1;
-    transition: background-color 0.3s ease;
   }
 
-  .action-button:hover {
-    background-color: #008a52; /* темніший зелений при наведенні */
+  #theme-toggle:checked + .theme-label {
+    background-color: #2a2d32;
   }
 
-  .action-button span {
-    display: none; /* Приховуємо текст, оскільки на макеті він не відображається */
+  .theme-label::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    right: 2px;
+    background-color: #00b068;
+    position: absolute;
+    border-radius: 50%;
+    transition: 0.8s ease;
+  }
+
+  .sun-icon,
+  .moon-icon {
+    font-size: 1.3rem;
+    position: absolute;
+  }
+
+  .sun-icon {
+    top: 12%;
+    left: -31%;
+  }
+
+  .moon-icon {
+    top: 9%;
+    right: 9%;
+  }
+
+  #theme-toggle:checked + .theme-label::before {
+    transform: translateX(25px);
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    bottom: 2px;
+    left: 0px;
+    right: 4px;
+  }
+
+  #theme-toggle:checked + .theme-label .sun-icon {
+    left: 11%;
+  }
+
+  #theme-toggle:checked + .theme-label .moon-icon {
+    right: -24%;
+  }
+
+  #theme-toggle:active + .theme-label::before {
+    width: 35px;
   }
 
   .nav__list {
