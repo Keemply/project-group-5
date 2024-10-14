@@ -92,8 +92,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function swipeInit() {
-    console.log(swiper);
-
     // swiper.update();
   }
   console.log();
