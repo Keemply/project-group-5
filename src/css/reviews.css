@@ -29,8 +29,6 @@
 
 
 .swiper-slide {
-    display: flex;
-    gap: 24px;
     box-sizing: border-box;
     padding: 32px;
     background-color: var(--LIGHT-GREY);

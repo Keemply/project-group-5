@@ -1,6 +1,7 @@
 import axios from 'axios';
 import Swiper from 'swiper';
 import 'swiper/css/bundle';
+console.log('Hi');
 
 axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api/';
 document.addEventListener('DOMContentLoaded', function () {
@@ -92,8 +93,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function swipeInit() {
-    console.log(swiper);
-
     // swiper.update();
   }
   console.log();
