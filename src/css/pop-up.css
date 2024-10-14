@@ -71,6 +71,10 @@
 }
 
 /* night theme */
+.night-theme .pop-up-background {
+    background-color: #1E2023;
+}
+
 .night-theme .pop-up-container {
     background-color: #1E2023;
     border: transparent;
