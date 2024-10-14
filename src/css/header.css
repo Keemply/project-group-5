@@ -38,11 +38,15 @@
 
   /* Кнопка бургер-меню */
   .menu-toggle {
-    display: block;
     background-color: transparent;
     border: none;
     cursor: pointer;
     padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 32px;
   }
 
   .menu-icon {
@@ -136,11 +140,15 @@
 
   /* Бургер-кнопка все ще видима */
   .menu-toggle {
-    display: block;
     background-color: transparent;
     border: none;
     cursor: pointer;
     padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 32px;
   }
 
   .menu-icon {
@@ -403,6 +411,9 @@
   padding: 36px 20px;
   width: 360px;
   height: 64px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
 }
 
 .menu-close {
