@@ -10,40 +10,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const emailInput = document.getElementById('email').value;
         const messageInput = document.getElementById('message').value;
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-        if (!emailPattern.test(emailInput)) {
-            modalTitle.textContent = "Error";
-            modalText.textContent = "The email entered is incorrect. Please check its correctness.";
-            backdrop.classList.add('is-open');
-            return;
-        }
 
         try {
-            const response = await fetch('https://your-server.com/api/contact', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    email: emailInput,
-                    message: messageInput,
-                }),
-            });
-
-            if (!response.ok) {
-                throw new Error('Server error');
-            }
-
-            modalTitle.textContent = "Thank you for your interest!";
-            modalText.textContent = "The manager will contact you shortly.";
+            await sendFormData(emailInput, messageInput);
+           
+            modalTitle.textContent = 'Thank you for your interest in cooperation!';
+            modalText.textContent = 'The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.';
             backdrop.classList.add('is-open');
-            form.reset(); 
-        } catch (error) {
-            iziToast.error({
-                title: 'Error',
-                message: 'There was an error sending your message. Please try again.',
-            });
+           
+            form.reset();
+        } catch (error) {            
+            modalTitle.textContent = 'Error';
+            modalText.textContent = 'Something went wrong. Please try again later.';
+            backdrop.classList.add('is-open');
         }
     });
 
@@ -51,9 +30,22 @@ document.addEventListener('DOMContentLoaded', function () {
         backdrop.classList.remove('is-open');
     });
 
-    backdrop.addEventListener('click', function (event) {
-        if (event.target === backdrop) {
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') {
             backdrop.classList.remove('is-open');
         }
     });
+
+    function sendFormData(email, message) {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                const success = Math.random() > 0.5;
+                if (success) {
+                    resolve();
+                } else {
+                    reject();
+                }
+            }, 1000);
+        });
+    }
 });
