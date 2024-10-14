@@ -1,3 +1,7 @@
+.body {
+  overflow: hidden;
+}
+
 @media screen and (max-width: 360px) {
   /* Заголовок */
   .header-section {
@@ -372,13 +376,19 @@
 
 /* Стилі для мобільного меню */
 .mobile-menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-color: #fff;
   background-image: url(../images/Hero-decor-bg-mob-1x.png);
+  background-repeat: no-repeat;
+  /* Забороняє повторення зображення */
+  background-size: 80%;
+  background-position: center;
+  /* Центрує зображення всередині елемента */
+  transition: opacity 0.5s ease, visibility 0.5s ease;
   display: none; /* Приховано за замовчуванням */
   flex-direction: column;
   justify-content: center;
@@ -391,7 +401,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 36px 20px;
-  width: 100%;
+  width: 360px;
+  height: 64px;
 }
 
 .menu-close {
