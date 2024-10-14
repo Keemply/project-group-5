@@ -1,1 +1,49 @@
-<header></header>
+<header class="header">
+  <div class="container header-section">
+    <div class="logo">
+      <a href="#">LLOYD<span>JEFFERSON</span><span class="dot">.</span></a>
+    </div>
+    <div class="icon-wrapper">
+      <div class="theme-switcher">
+        <input type="checkbox" id="theme-toggle" />
+        <label for="theme-toggle" class="theme-label">
+          <i class="sun-icon"></i>
+          <i class="moon-icon"></i>
+        </label>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li><a href="#about-me">About me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" aria-label="Open Menu">
+      <span class="menu-icon"></span>
+    </button>
+  </div>
+
+  <!-- ------------------MOBILE------------------------ -->
+  <div class="mobile-menu-container">
+    <div class="mobile-menu">
+      <div class="mobile-header">
+        <!-- Логотип в мобільному меню -->
+        <div class="logo">
+          <a href="#">LLOYD<span>JEFFERSON</span><span class="dot">.</span></a>
+        </div>
+        <!-- Кнопка закриття мобільного меню -->
+        <button class="menu-close" aria-label="Close Menu">&times;</button>
+      </div>
+      <!-- Навігація для мобільного меню -->
+      <nav class="mobile-nav">
+        <ul class="header-mobile-list">
+          <li><a href="#about">About me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
