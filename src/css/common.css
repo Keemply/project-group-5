@@ -22,6 +22,10 @@ body {
     background-color: var(--WHITE);
 }
 
+.night-theme {
+    background-color: rgba(30, 32, 35, 1);
+}
+
 .container {
     box-sizing: border-box;
 }
