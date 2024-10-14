@@ -56,23 +56,53 @@
     color: var(--BLACK);
 }
 
-.swiper-but-cont {
+.swiper-button-box {
     display: flex;
+    margin-top: 24px;
     gap: 16px;
-
+    justify-content: flex-end;
 }
 
-.rev-but {
-    cursor: pointer;
-    border: 1px solid var(--BLACK);
+.swiper-button {
+    border: 1px solid var(--LIGHT-GREY);
     border-radius: 8px;
-    padding: 0px;
-    width: 40px;
-    height: 40px;
+    box-sizing: border-box;
+    padding: 11px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
 }
 
-.rev-svg {
+.error-message {
+    display: none;
+}
 
+.swiper-button:hover {
+    background: var(--LIGHT-GREY);
+    border: 1px solid var(--BLACK);
+}
+
+.swiper-button-svg {
     width: 100%;
     height: 100%;
+    stroke: var(--BLACK);
+
+}
+
+.swiper-button.swiper-button-disabled {
+    pointer-events: none;
+
+}
+
+.swiper-button.swiper-button-disabled .swiper-button-svg {
+    stroke: var(--LIGHT-GREY);
+}
+
+@media screen and (min-width: 1280px) {
+    .swiper-button-box {
+        gap: 24px;
+    }
 }
