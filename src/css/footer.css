@@ -1,0 +1,117 @@
+footer {
+    width: 100%;
+        margin: 0 auto;
+}
+
+
+
+.footer-block {
+    border-top: 1px solid #e4e5e6;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+    margin-bottom: 24px;
+}
+
+
+
+.footer-logo-link {
+    font-family: "Impact", sans-serif;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 100%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #292929;
+        cursor: pointer;
+}
+
+.footer-logo-color {
+color: #00b068;
+}
+.footer-logo {
+margin-bottom: 32px;
+}
+
+.social-links-list {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.social-links {
+margin-bottom: 40px;
+}
+
+.social-links-item-link {
+font-family: "Poppins",
+        sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+color: #292929;
+cursor: pointer;
+}
+
+.footer-bottom-par {
+font-family: "Poppins",
+        sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #292929;
+}
+
+.footer-bottom {
+    display: block;
+    text-align: center;
+}
+
+.social-links-list a:hover {
+    color: #14c57c;
+}
+
+
+/* @media screen and (min-width:360px) {
+    footer {
+        width: 360px;
+        margin: 0 auto;
+    }
+} */
+
+@media screen and (min-width:768px) {
+.social-links-list {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+        .footer-block {
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+
+                .footer-bottom-par {
+                    text-align: right;
+                }
+}
+
+@media screen and (min-width:1280px) {
+    .footer-middle {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+        align-items: center;
+    }
+        .footer-logo {
+            margin-bottom: 0px;
+        }
+
+                .social-links {
+                    margin-bottom: 0px;
+                }
+}
