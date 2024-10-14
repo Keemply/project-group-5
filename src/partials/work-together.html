@@ -1,9 +1,10 @@
 <section class="section-address">
     <picture>
-        <source srcset="/images/work-together-backround-tab.png 1x, /images/work-together-backround-tab-2x.png 2x" media="(min-width: 768px)">
+        <source srcset="/images/work-together-backround-tab.png 1x, /images/work-together-backround-tab-2x.png 2x"
+            media="(min-width: 768px)">
         <source srcset="/images/work-together-backround.png 1x, /images/work-together-backround-2x.png 2x"
             media="(min-width: 1280px)">
-            <img class="address-img" src="/images/work-together-backround-tab.png" alt="fon">
+        <img class="address-img" src="/images/work-together-backround-tab.png" alt="fon">
     </picture>
     <div>
         <div>
@@ -26,41 +27,40 @@
                         </li>
                         <li class="address-item">
                             <svg class="address-icon" width="24" height="24">
-                                <use use href="/images/icon.svg#icon-adress"></use>
+                                <use href="/images/icon.svg#icon-adress"></use>
                             </svg>
                             <a class="address-link" href="https://www.google.com/maps">USA, New York</a>
                         </li>
                     </ul>
-            </div>     
+                </address>
+            </div>
             <div class="address-conteiner-form">
                 <form class="address-form" id="contactForm">
                     <div class="address-model">
                         <div class="form-email">
-                            <input class="form-email-input" id="email" type="email" name="Your email*" placeholder="Your email*">
+                            <input class="form-email-input" id="email" type="email" name="Your email*"
+                                placeholder="Your email*" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" required>
                         </div>
                         <div class="form-message">
-                            <textarea name="user-comment" id="message" class="form-message-text" placeholder="Message"></textarea>
+                            <textarea name="user-comment" id="message" class="form-message-text"
+                                placeholder="Message"></textarea>
                         </div>
                     </div>
                     <button class="address-btn" type="submit">SEND MESSAGE</button>
                 </form>
             </div>
-            </address>
         </div>
-
     </div>
 </section>
 
-<div class="backdrop " id="backdrop"> 
+<div class="backdrop is-open" id="backdrop" tabindex="-1">
     <div class="model">
-        <button type="button" class="model-close" id="closeModal"> 
+        <button type="button" class="model-close" id="closeModal">
             <svg class="icon-x" height="12" width="12">
                 <use href="/images/icon.svg#icon-x"></use>
             </svg>
         </button>
-        <h4 class="model-tytle" id="modalTitle"> 
-        </h4>
-        <p class="model-text" id="modalText">
-        </p>
+        <h4 class="model-tytle" id="modalTitle"></h4>
+        <p class="model-text" id="modalText"></p>
     </div>
 </div>
