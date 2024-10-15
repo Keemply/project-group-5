@@ -1,6 +1,37 @@
 .body {
   overflow: hidden;
 }
+.night-theme .header-section {
+  background-color: rgba(30, 32, 35, 1);
+}
+
+.night-theme .menu-icon {
+  background-color: var(--WHITE);
+}
+
+.night-theme .logo a {
+  color: var(--WHITE);
+}
+
+.night-theme .menu-icon::before,
+.menu-icon::after {
+  background-color: var(--WHITE);
+}
+.night-theme .menu-icon::after {
+  background-color: var(--WHITE);
+}
+
+.night-theme .mobile-menu {
+  background-color: rgba(30, 32, 35, 1);
+}
+
+.night-theme .menu-close {
+  color: var(--WHITE);
+}
+
+.night-theme .mobile-nav ul li a {
+  color: var(--WHITE);
+}
 
 @media screen and (max-width: 360px) {
   /* Заголовок */
