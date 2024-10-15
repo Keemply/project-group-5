@@ -19,9 +19,9 @@ document.querySelectorAll('.mobile-nav a').forEach(link => {
   });
 });
 
-document.querySelector('.action-button').addEventListener('click', function () {
-  alert('Button clicked!');
-});
+// document.querySelector('.action-button').addEventListener('click', function () {
+//   alert('Button clicked!');
+// });
 
 // -----Перемикач фону-----------
 
@@ -31,26 +31,29 @@ const body = document.body;
 
 // Перевіряємо, чи вже є збережена тема в localStorage
 const currentTheme = localStorage.getItem('theme');
+console.log(currentTheme);
 
 // Якщо є, застосовуємо її
-if (currentTheme) {
-  body.classList.add(currentTheme);
 
-  // Якщо збережена тема — dark, то встановлюємо чекбокс як активний
-  if (currentTheme === 'dark') {
-    checkbox.checked = true;
-  }
+// Якщо збережена тема — dark, то встановлюємо чекбокс як активний
+
+if (currentTheme === 'dark') {
+  checkbox.checked = true;
+}
+
+if (currentTheme === 'dark') {
+  body.classList.add('night-theme');
 }
 
 // Функція для перемикання теми
 const switchTheme = e => {
   if (e.target.checked) {
     // Якщо чекбокс активований, додаємо клас 'dark' для body
-    body.classList.add('dark');
+    body.classList.add('night-theme');
     localStorage.setItem('theme', 'dark'); // Зберігаємо тему в localStorage
   } else {
     // Якщо чекбокс вимкнений, видаляємо клас 'dark'
-    body.classList.remove('dark');
+    body.classList.remove('night-theme');
     localStorage.setItem('theme', 'light'); // Зберігаємо світлу тему
   }
 };

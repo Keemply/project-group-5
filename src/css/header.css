@@ -16,16 +16,16 @@
   .logo a {
     font-size: 16px;
     text-decoration: none;
-    color: #000; /* Основний колір тексту */
+    color: #000;
     font-weight: bold;
   }
 
   .logo a span {
-    color: #00b068; /* Accent Green для частини "JEFFERSON" */
+    color: #00b068;
     font-weight: bold;
   }
   .dot {
-    color: #00b068; /* Зелений колір для крапки */
+    color: #00b068;
   }
   .theme-switcher {
     display: none;
@@ -38,11 +38,15 @@
 
   /* Кнопка бургер-меню */
   .menu-toggle {
-    display: block;
     background-color: transparent;
     border: none;
     cursor: pointer;
     padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 32px;
   }
 
   .menu-icon {
@@ -136,11 +140,15 @@
 
   /* Бургер-кнопка все ще видима */
   .menu-toggle {
-    display: block;
     background-color: transparent;
     border: none;
     cursor: pointer;
     padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 32px;
   }
 
   .menu-icon {
@@ -252,6 +260,7 @@
     font-size: 24px;
     color: #000; /* Основний колір тексту */
     text-decoration: none; /* Прибираємо підкреслення */
+    margin: 0;
   }
 
   .logo a span {
@@ -403,6 +412,9 @@
   padding: 36px 20px;
   width: 360px;
   height: 64px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
 }
 
 .menu-close {
