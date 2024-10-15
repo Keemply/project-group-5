@@ -28,21 +28,19 @@ document.querySelectorAll('.mobile-nav a').forEach(link => {
 // Отримуємо чекбокс і елемент body
 const checkbox = document.querySelector('#theme-toggle');
 const body = document.body;
-
 // Перевіряємо, чи вже є збережена тема в localStorage
 const currentTheme = localStorage.getItem('theme');
 console.log(currentTheme);
-
 // Якщо є, застосовуємо її
-
 // Якщо збережена тема — dark, то встановлюємо чекбокс як активний
-
-if (currentTheme === 'dark') {
-  checkbox.checked = true;
-}
-
 if (currentTheme === 'dark') {
   body.classList.add('night-theme');
+}
+
+// Якщо збережена тема — dark, то встановлюємо чекбокс як активний
+if (currentTheme === 'dark') {
+  checkbox.checked = true;
+
 }
 
 // Функція для перемикання теми
@@ -57,6 +55,5 @@ const switchTheme = e => {
     localStorage.setItem('theme', 'light'); // Зберігаємо світлу тему
   }
 };
-
 // Додаємо подію на зміну стану чекбокса
 checkbox.addEventListener('change', switchTheme);

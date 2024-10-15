@@ -28,9 +28,84 @@
     color: #00b068;
   }
   .theme-switcher {
+    display: flex;
+  }
+
+  #theme-toggle {
     display: none;
   }
 
+  .theme-label {
+    position: relative;
+    height: 24px;
+    width: 48px;
+    background-color: #e4e5e6;
+    border-radius: 2rem;
+    overflow: hidden;
+    transition: 0.5s ease;
+    left: 20px;
+  }
+
+  .theme-label:hover {
+    cursor: pointer;
+  }
+
+  #theme-toggle:checked + .theme-label {
+    background-color: #2a2d32;
+  }
+
+  .theme-label::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    right: 2px;
+    background-color: #00b068;
+    position: absolute;
+    border-radius: 50%;
+    transition: 0.8s ease;
+  }
+
+  .sun-icon,
+  .moon-icon {
+    font-size: 1.3rem;
+    position: absolute;
+  }
+
+  .sun-icon {
+    top: 12%;
+    left: -31%;
+  }
+
+  .moon-icon {
+    top: 9%;
+    right: 9%;
+  }
+
+  #theme-toggle:checked + .theme-label::before {
+    transform: translateX(25px);
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    bottom: 2px;
+    left: 0px;
+    right: 4px;
+  }
+
+  #theme-toggle:checked + .theme-label .sun-icon {
+    left: 11%;
+  }
+
+  #theme-toggle:checked + .theme-label .moon-icon {
+    right: -24%;
+  }
+
+  #theme-toggle:active + .theme-label::before {
+    width: 35px;
+  }
   /* Приховуємо навігацію на мобільних */
   .nav {
     display: none;
@@ -130,7 +205,83 @@
     color: #00b068; /* Зелений колір для крапки */
   }
   .theme-switcher {
+    display: flex;
+  }
+
+  #theme-toggle {
     display: none;
+  }
+
+  .theme-label {
+    position: relative;
+    height: 24px;
+    width: 48px;
+    background-color: #e4e5e6;
+    border-radius: 2rem;
+    overflow: hidden;
+    transition: 0.5s ease;
+    left: 20px;
+  }
+
+  .theme-label:hover {
+    cursor: pointer;
+  }
+
+  #theme-toggle:checked + .theme-label {
+    background-color: #2a2d32;
+  }
+
+  .theme-label::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    right: 2px;
+    background-color: #00b068;
+    position: absolute;
+    border-radius: 50%;
+    transition: 0.8s ease;
+  }
+
+  .sun-icon,
+  .moon-icon {
+    font-size: 1.3rem;
+    position: absolute;
+  }
+
+  .sun-icon {
+    top: 12%;
+    left: -31%;
+  }
+
+  .moon-icon {
+    top: 9%;
+    right: 9%;
+  }
+
+  #theme-toggle:checked + .theme-label::before {
+    transform: translateX(25px);
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    bottom: 2px;
+    left: 0px;
+    right: 4px;
+  }
+
+  #theme-toggle:checked + .theme-label .sun-icon {
+    left: 11%;
+  }
+
+  #theme-toggle:checked + .theme-label .moon-icon {
+    right: -24%;
+  }
+
+  #theme-toggle:active + .theme-label::before {
+    width: 35px;
   }
 
   /* Приховуємо навігацію на екрані 375px */
@@ -202,7 +353,83 @@
     color: #00b068; /* Зелений колір для крапки */
   }
   .theme-switcher {
+    display: flex;
+  }
+
+  #theme-toggle {
     display: none;
+  }
+
+  .theme-label {
+    position: relative;
+    height: 24px;
+    width: 48px;
+    background-color: #e4e5e6;
+    border-radius: 2rem;
+    overflow: hidden;
+    transition: 0.5s ease;
+    left: 20px;
+  }
+
+  .theme-label:hover {
+    cursor: pointer;
+  }
+
+  #theme-toggle:checked + .theme-label {
+    background-color: #2a2d32;
+  }
+
+  .theme-label::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    right: 2px;
+    background-color: #00b068;
+    position: absolute;
+    border-radius: 50%;
+    transition: 0.8s ease;
+  }
+
+  .sun-icon,
+  .moon-icon {
+    font-size: 1.3rem;
+    position: absolute;
+  }
+
+  .sun-icon {
+    top: 12%;
+    left: -31%;
+  }
+
+  .moon-icon {
+    top: 9%;
+    right: 9%;
+  }
+
+  #theme-toggle:checked + .theme-label::before {
+    transform: translateX(25px);
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    bottom: 2px;
+    left: 0px;
+    right: 4px;
+  }
+
+  #theme-toggle:checked + .theme-label .sun-icon {
+    left: 11%;
+  }
+
+  #theme-toggle:checked + .theme-label .moon-icon {
+    right: -24%;
+  }
+
+  #theme-toggle:active + .theme-label::before {
+    width: 35px;
   }
 
   /* Навігаційне меню */
