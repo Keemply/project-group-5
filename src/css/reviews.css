@@ -99,6 +99,40 @@
     stroke: var(--LIGHT-GREY);
 }
 
+/* Dark theme */
+.night-theme .title-reviews {
+    color: #F0F0F0;
+}
+
+.night-theme .swiper-slide {
+    background-color: rgba(42, 45, 50, 1);
+}
+
+.night-theme .review-review {
+    color: #F0F0F0;
+}
+
+.night-theme .review-author {
+    color: #F0F0F0;
+}
+
+.night-theme .swiper-button {
+    border: 1px solid #2A2D32;
+}
+
+.night-theme .swiper-button-svg {
+    stroke: #F0F0F0;
+}
+
+.night-theme .swiper-button:hover {
+    background-color: #2A2D32;
+}
+
+.night-theme .swiper-button.swiper-button-disabled .swiper-button-svg {
+    stroke: #2A2D32;
+}
+
+/* end of DT */
 @media screen and (min-width: 1280px) {
     .swiper-button-box {
         gap: 24px;
