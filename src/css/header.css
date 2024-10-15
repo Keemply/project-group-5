@@ -20,8 +20,8 @@
     font-weight: bold;
   }
 
-  .logo a span {
-    color: #00b068; /* Accent Green для частини "JEFFERSON" */
+  /* .logo a span {
+    color: #00b068; Accent Green для частини "JEFFERSON" */
     font-weight: bold;
   }
   .dot {
@@ -260,6 +260,7 @@
     font-size: 24px;
     color: #000; /* Основний колір тексту */
     text-decoration: none; /* Прибираємо підкреслення */
+    margin: 0;
   }
 
   .logo a span {
