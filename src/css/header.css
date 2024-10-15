@@ -16,7 +16,7 @@
   .logo a {
     font-size: 16px;
     text-decoration: none;
-    color: #000;
+    color: #000; /* Основний колір тексту */
     font-weight: bold;
   }
 

@@ -1,10 +1,7 @@
-.faq-section {
-    padding: 0px 20px;
-    background-color: #E4E5E6; 
 
-}
 .faq-container{
     min-width: 320px;
+    padding: 0px 20px;
     
 }
 
@@ -38,9 +35,7 @@
 
 .accordion-item {
     box-sizing: border-box;
-    border-radius: 16px;
-    background: #E4E5E6;
-    display: flex;
+     display: flex;
     width: 100%;
     padding: 28px 24px;
     flex-direction: column;
@@ -48,10 +43,12 @@
     align-items: center;
     gap: 24px;
     transition: background-color 0.3s ease;
+    border-bottom: 1px solid #E4E5E6;
 }
 
 .accordion-item.open {
     background-color: #BCDFD1;
+    border-radius: 16px;
 }
 
 .accordion-header{
@@ -74,13 +71,14 @@
     width: 100%;
     text-align: left;
     cursor: pointer;
+    
 }
 .accordion-item.open .accordion-header{
     background-color: #BCDFD1;
    
 }
 .accordion-header-btn {
-    background: #E4E5E6;
+   background-color: transparent;
     border: none;
     cursor: pointer;
     display: flex;
@@ -133,12 +131,34 @@
     display: block;
 
 }
+/* night-theme-FAQ */
+.night-theme .section-wrap {
+    background: #204136;
+}
 
+.night-theme .faq-title {
+color: #F0F0F0;
+}
 
+.night-theme .faq-title .faq-span {
+color: #14C57C;
+}
+
+.night-theme .accordion-item {
+    color: #F0F0F0;
+    border-bottom: #F0F0F0;
+}
+
+.night-theme .accordion-item.open {
+    background: #204136;
+}
 
 
 @media (min-width: 768px) {
+   
     .faq-title {
+        display: flex;
+        flex-wrap: wrap;
         font-size: 108px;
         line-height: 114%;
         letter-spacing: 0.01em;
@@ -152,16 +172,13 @@
 
 
 @media (min-width: 1280px) {
-    .faq-section {
-        display: inline-flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 0px 32px;
-        
-    }
+    
+   
     .faq-container{
         display: flex;
         flex-direction: row;
+        padding: 0px 32px;
+        
     }
 
     .left-part-faq{
@@ -181,7 +198,6 @@
     .faq-title {
         
         width: 520;
-        display: block;
         margin-right: 104;
         margin-bottom: 240px;
     }
