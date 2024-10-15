@@ -1,3 +1,7 @@
+.container{
+    min-width: 320px;
+    padding: 0px 20px;
+}
 
 .address-img {
     display: none;
@@ -54,18 +58,26 @@
     color: #00B068;
 }
 
-.address-conteiner-form {}
+.address-conteiner-form {
+    width: 100%;
+}
 
 .address-form {
     display: flex;
     flex-direction: column;
     gap: 32px;
+    width: 100%;
 }
 
 .address-model {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
+    width: 100%;
+    
+}
+
+.form-email,
+.form-message {
+    width: 100%;
+    
 }
 
 .form-email-input {
@@ -75,13 +87,14 @@
     letter-spacing: 0.03em;
     border-radius: 8px;
     color: #292929;
-    width: 100%;
+    width: 500px;
     padding-left: 16px;
     padding-top: 12px;
     padding-bottom: 12px;
     background: #E4E5E6;
     border: none;
     transition: background-color 0.3s;
+    box-sizing: border-box;
 }
 
 .form-email-input:hover {
@@ -104,6 +117,7 @@
     transition: background-color 0.3s;
     width: 100%;
     height: 128px;
+    box-sizing: border-box
 }
 
 .form-message-text:hover {
@@ -130,81 +144,6 @@
 
 .address-btn:hover {
     background-color: #009156;
-}
-
-.backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(46, 47, 66, 0.4);
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-}
-
-.is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-}
-
-.model {
-    position: fixed;
-    border: 1px solid var(--light-grey);
-    border-radius: 16px;
-    padding: 48px 32px;
-    width: 90%;
-        /* Змінюємо ширину на 90% для мобільних */
-    max-width: 400px;
-    height: auto;
-    background: #F0F0F0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.model-close {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    width: 16px;
-    height: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    cursor: pointer;
-    border: none;
-}
-
-.icon-x {
-    width: 12px;
-    height: 12px;
-    fill: #292929;
-}
-
-.model-tytle {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 160%;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    text-align: center;
-    color: #00B068;
-}
-
-.model-text {
-    font-family: var(--font-family);
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: #292929;
 }
 
 @media only screen and (min-width: 768px) {
