@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function swipeInit() {
     // swiper.update();
   }
-  console.log();
+
   async function render() {
     try {
       const data = await getReviews();
