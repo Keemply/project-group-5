@@ -160,7 +160,7 @@
     } */
 
     .container-abaut-me {
-        width: 768px;
+        /* width: 768px; */
         margin: 0 auto;
         background-image: url(../images/about-me-background-tab.png);
 
@@ -172,7 +172,7 @@
 
     @media (min-resolution: 192dpi) {
         .container-abaut-me {
-            width: 768px;
+            /* width: 768px; */
             margin: 0 auto;
             background-image: url(../images/about-me-background-tab-2x.png)
         }
