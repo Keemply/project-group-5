@@ -77,7 +77,7 @@
     background-color: #BCDFD1;
    
 }
-.accordion-header-btn {
+.accordion-trigger {
    background-color: transparent;
     border: none;
     cursor: pointer;
@@ -91,12 +91,12 @@
     
    
 }
-.accordion-item.open .accordion-header-btn{
+.accordion-item.open .accordion-trigger{
     background-color: #BCDFD1;
 
 }
 
-.accordion-header-btn[aria-expanded="true"] {
+.accordion-trigger[aria-expanded="true"] {
     background: #BCDFD1; 
     
 }
@@ -132,9 +132,6 @@
 
 }
 /* night-theme-FAQ */
-.night-theme .section-wrap {
-    background: #204136;
-}
 
 .night-theme .faq-title {
 color: #F0F0F0;
@@ -144,9 +141,13 @@ color: #F0F0F0;
 color: #14C57C;
 }
 
-.night-theme .accordion-item {
+.night-theme .accordion-header{
     color: #F0F0F0;
-    border-bottom: #F0F0F0;
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.night-theme .accordion-body {
+    color: #F0F0F0;
 }
 
 .night-theme .accordion-item.open {
@@ -164,7 +165,7 @@ color: #14C57C;
         letter-spacing: 0.01em;
     }
 
-    .accordion-header-btn {
+    .accordion-trigger {
         font-size: 20px;
         line-height: 160%;
     }
