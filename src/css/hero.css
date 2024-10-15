@@ -31,6 +31,16 @@
   padding-top: 40px;
   padding-bottom: 40px;
 } */
+.conteiner-link {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 96px;
+  flex-shrink: 0;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 .button-custom {
   position: absolute;
   right: 0;
@@ -64,6 +74,9 @@
   gap: 24px;
 }
 @media screen and (min-width: 320px) and (max-width: 360px) {
+  .list-social-media {
+    flex-direction: column;
+  }
   .text-hero {
     color: var(--Black, #292929);
     font-size: 18px;
@@ -127,10 +140,15 @@
     width: 165px;
     height: 92px;
     flex-shrink: 0;
+    border-radius: 16px;
+    flex-shrink: 0;
   }
 }
 /* мобильная версия */
 @media screen and (min-width: 360px) {
+  .list-social-media {
+    flex-direction: column;
+  }
   .text-hero {
     color: var(--Black, #292929);
 
@@ -209,6 +227,10 @@
   }
 }
 @media screen and (min-width: 768px) {
+  .list-social-media {
+    display: flex;
+    flex-direction: row;
+  }
   .text-hero {
     color: var(--Black, #292929);
 
@@ -287,27 +309,21 @@
 .conteiner-Myphoto {
   width: 100%;
 }
-/* .conteiner-link {
-  position: relative;
-  display: flex;
-  width: 416px;
-  height: 96px;
-  flex-shrink: 0;
-  align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-} */
 
-.list-social-media {
+/* .list-social-media {
   display: flex;
   flex-direction: row;
-}
+} */
 .social-media {
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
 @media screen and (min-width: 1280px) {
+  .list-social-media {
+    display: flex;
+    flex-direction: row;
+  }
   .my-photo-small {
     display: flex;
     width: 108px;
@@ -395,4 +411,24 @@
   .head-content {
     background-image: url('/images/decor-desctop-2x.png');
   }
+}
+/* Подчеркивание */
+.list-href {
+  text-decoration: none; /* Убирает стандартное подчеркивание */
+  position: relative; /* Позиционирование для псевдоэлемента */
+}
+
+.list-href::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px; /* Толщина подчеркивания */
+  bottom: -2px; /* Позиция подчеркивания */
+  left: 0;
+  background-color: #00b068; /* Цвет подчеркивания */
+  transition: width 0.3s ease; /* Плавный переход */
+}
+
+.list-href:hover::after {
+  width: 100%; /* Полная ширина подчеркивания при наведении */
 }
