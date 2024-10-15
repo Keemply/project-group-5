@@ -78,4 +78,8 @@ body {
     section {
         margin-bottom: 164px;
     }
+
+    #projects {
+        margin-bottom: 48px;
+    }
 }
