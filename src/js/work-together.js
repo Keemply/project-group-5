@@ -29,13 +29,15 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    async function sendFormData(email, message) {
-        const response = await fetch('https://your-server-endpoint.com/api/submit', {
+    async function sendFormData(email, comment) {
+        console.log(JSON.stringify({ email, comment}));
+        
+        const response = await fetch('https://portfolio-js.b.goit.study/api/requests', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ email, message }),
+            body: JSON.stringify({ email, comment}),
         });
 
         if (!response.ok) {
