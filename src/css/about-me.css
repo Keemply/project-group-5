@@ -2,7 +2,7 @@
     font-family: "Impact", sans-serif;
     font-weight: 400;
     font-size: 52px;
-
+    margin-bottom: 40px;
     /* line-height: 64px; */
     line-height: 123%;
     letter-spacing: 0.03em;
@@ -58,6 +58,7 @@
 
 
 
+
 .abaut-text-li::marker {
     color: rgb(4, 159, 4);
 
@@ -81,11 +82,10 @@
         height: 64px;
     }
 
-    .abaut-me-picture { 
+    .abaut-me-picture {
         width: 320px;
         height: 374px;
-        padding-top: 40px;
-        padding-bottom: 40px;
+
     }
 
     .images-abaut-me {
@@ -125,11 +125,10 @@
 
     }
 
-    .abaut-me-picture { 
+    .abaut-me-picture {
         width: 320px;
         height: 374px;
-        padding-top: 40px;
-        padding-bottom: 40px;
+
     }
 
     .images-abaut-me {
@@ -145,7 +144,7 @@
     }
 
     .logo-abaut-me {
-        padding-top: 28px;
+        padding-top: 40px;
         padding-bottom: 20px;
 
     }
@@ -190,7 +189,7 @@
         text-transform: uppercase;
         text-align: right;
         color: #292929;
-
+        margin-bottom: 0;
         width: 447px;
         height: 124px;
 
@@ -223,17 +222,26 @@
 
     }
 
-    .abaut-me-picture { 
+    .abaut-me-picture {
         width: 336px;
         height: 392px;
-        padding: 408px 32px 20px 0;
+        align-self: flex-end;
     }
 
     .images-abaut-me {
         border-radius: 16px;
         width: 100%;
         height: 100%;
-        
+
+    }
+
+    .logo-abaut-me.logo-abaut-me-first {
+        padding-top: 40px;
+    }
+
+    .abaut-me-text-logo {
+        padding-left: 32px;
+        padding-bottom: 56px;
     }
 
     .logo-abaut-me {
@@ -247,7 +255,7 @@
         text-transform: uppercase;
         color: #292929;
 
-        padding-top: 40px;
+        padding-top: 116px;
         padding-bottom: 32px;
     }
 
@@ -292,9 +300,13 @@
         background-image: url(../images/about-me-background.png);
 
         background-repeat: no-repeat;
-            background-position: calc(100% - 35px) 70%;
+        background-position: calc(100% - 35px) 70%;
         background-size: 384px 288px;
 
+    }
+
+    .bio {
+        padding-left: 208px;
     }
 
     @media (min-resolution: 192dpi) {
@@ -309,10 +321,10 @@
         }
     }
 
-    .abaut-me-picture { 
-    width: 384px;
-    height: 448px;
-    padding: 312px 136px 40px 208px;
+    .abaut-me-picture {
+        width: 384px;
+        height: 448px;
+
     }
 
     .images-abaut-me {
@@ -322,8 +334,18 @@
 
     }
 
+    .abaut-me-text-logo {
+        padding-left: 136px;
+        padding-bottom: 232px;
+    }
+
     .cont-me-to {
-        padding-left: 240px;
+        padding-left: 208px;
+
+    }
+
+    .logo-abaut-me {
+        padding-top: 80px;
     }
 
     .text-about-me {
@@ -353,14 +375,13 @@
 
 .night-theme .logo-abaut-me-to {
     color: var(--WHITE);
-    
+
 }
 
-.night-theme .logo-abaut-me { 
-color: var(--WHITE);
+.night-theme .logo-abaut-me {
+    color: var(--WHITE);
 }
 
-.night-theme .text-about-me { 
-color: var(--WHITE);
+.night-theme .text-about-me {
+    color: var(--WHITE);
 }
-
