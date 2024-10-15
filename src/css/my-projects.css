@@ -50,6 +50,7 @@
 }
 
 .my-projects__link {
+  font-family: 'Poppins-Medium';
   letter-spacing: 0.03em;
   border-radius: 8px;
   padding: 12px 24px;
@@ -62,6 +63,7 @@
   align-self: flex-end;
   text-transform: uppercase;
 }
+
 .my-projects__link-icon {
   width: 18px;
   height: 18px;
@@ -69,6 +71,7 @@
 .my-projects__link:hover {
   background-color: var(--HOVER-GREY);
 }
+
 .my-projects__button-container {
   display: flex;
   flex-direction: column;
@@ -76,6 +79,7 @@
 }
 
 .my-projects__button {
+  font-family: 'Poppins-Regular';
   background: none;
   border: none;
   padding: 0;
@@ -101,6 +105,33 @@
 .my-projects__button:hover {
   color: var(--ACCET-GREEN);
 }
+
+.night-theme .my-projects__title {
+  color: var(--WHITE);
+}
+
+.night-theme .my-projects__text {
+  color: var(--WHITE);
+}
+.night-theme .my-projects__info-tittle {
+  color: var(--WHITE);
+}
+.night-theme .my-projects__link {
+  color: var(--WHITE);
+  background-color: #2a2d32;
+}
+.night-theme .my-projects__link:hover {
+  background-color: #3b3f45;
+}
+.night-theme .my-projects__button {
+  color: var(--WHITE);
+}
+.night-theme .my-projects__button::after {
+  background-color: #14c57c;
+}
+.night-theme .my-projects__button:hover {
+  color: #14c57c;
+}
 @media screen and (min-width: 768px) {
   .my-projects__title {
     font-size: 108px;
@@ -119,6 +150,7 @@
     margin-bottom: 20px;
   }
   .my-projects__info-tittle {
+    font-family: 'Poppins-Medium';
     font-size: 36px;
     line-height: 1.33333;
     letter-spacing: 0.01em;

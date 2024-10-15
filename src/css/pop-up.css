@@ -1,0 +1,101 @@
+.pop-up-background {
+    background-color: var(--BLACK-80);
+    top: 0;
+    left: 0;
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pop-up-background.pop-up-hide {
+    display: none;
+}
+
+.pop-up-container {
+    position: relative;
+    box-sizing: border-box;
+    background-color: var(--WHITE);
+    max-width: 320px;
+    padding: 48px 32px;
+    border: 1px solid var(--LIGHT-GREY);
+    border-radius: 16px;
+    opacity: 1;
+
+}
+
+
+
+.pop-up-container-header {
+    color: var(--ACCET-GREEN);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.pop-up-container-text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--BLACK);
+}
+
+.pop-up-container-button {
+    padding: 0;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none
+}
+
+.pop-up-container-close {
+    stroke: var(--BLACK);
+    width: 100%;
+    height: 100%;
+
+}
+
+/* night theme */
+.night-theme .pop-up-background {
+    background-color: #1E2023 / 80%;
+}
+
+.night-theme .pop-up-container {
+    background-color: #1E2023;
+    border: transparent;
+}
+
+.night-theme .pop-up-container-text {
+    color: var(--WHITE);
+}
+
+.night-theme .pop-up-container-close {
+    stroke: var(--WHITE);
+}
+
+/* End of night theme */
+@media screen and (min-width: 768px) {
+    .pop-up-container-button {
+        top: 20px;
+        right: 20px;
+    }
+
+    .pop-up-container {
+        max-width: 492px;
+    }
+}
