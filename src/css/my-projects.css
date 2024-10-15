@@ -50,6 +50,7 @@
 }
 
 .my-projects__link {
+  font-family: 'Poppins-Medium';
   letter-spacing: 0.03em;
   border-radius: 8px;
   padding: 12px 24px;
@@ -78,6 +79,7 @@
 }
 
 .my-projects__button {
+  font-family: 'Poppins-Regular';
   background: none;
   border: none;
   padding: 0;
@@ -148,6 +150,7 @@
     margin-bottom: 20px;
   }
   .my-projects__info-tittle {
+    font-family: 'Poppins-Medium';
     font-size: 36px;
     line-height: 1.33333;
     letter-spacing: 0.01em;
