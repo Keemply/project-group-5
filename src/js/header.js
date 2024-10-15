@@ -36,6 +36,11 @@ console.log(currentTheme);
 // Якщо є, застосовуємо її
 
 // Якщо збережена тема — dark, то встановлюємо чекбокс як активний
+
+if (currentTheme === 'dark') {
+  checkbox.checked = true;
+}
+
 if (currentTheme === 'dark') {
   body.classList.add('night-theme');
 }
