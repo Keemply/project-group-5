@@ -77,12 +77,7 @@ font-family: "Poppins",
 }
 
 
-/* @media screen and (min-width:360px) {
-    footer {
-        width: 360px;
-        margin: 0 auto;
-    }
-} */
+
 
 @media screen and (min-width:768px) {
 .social-links-list {
