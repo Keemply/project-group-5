@@ -219,10 +219,12 @@
   }
   .head-content {
     background-image: url(../images/Hero-decor-bg-mob-1x.png);
+    background-size: cover;
   }
   @media (min-resolution: 192dpi) {
     .head-content {
       background-image: url('../images/Hero-decor-bg-mob-2x.png');
+      background-size: cover;
     }
   }
 }
@@ -299,10 +301,12 @@
     justify-content: start;
 
     background-image: url(../images/decor-tablet-1x.png);
+    background-size: cover;
   }
   @media (min-resolution: 192dpi) {
     .head-content {
       background-image: url('../images/decor-tablet-2x.png');
+      background-size: cover;
     }
   }
 }
@@ -403,32 +407,34 @@
   }
 
   .head-content {
-    background-image: url(/images/decor-desctop-1x.png);
+    background-image: url(../images/decor-desctop-1x.png);
+    background-size: cover;
   }
 }
 
 @media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
   .head-content {
-    background-image: url('/images/decor-desctop-2x.png');
+    background-image: url('../images/decor-desctop-2x.png');
+    background-size: cover;
   }
 }
 /* Подчеркивание */
 .list-href {
-  text-decoration: none; /* Убирает стандартное подчеркивание */
-  position: relative; /* Позиционирование для псевдоэлемента */
+  text-decoration: none;
+  position: relative;
 }
 
 .list-href::after {
   content: '';
   position: absolute;
   width: 0;
-  height: 2px; /* Толщина подчеркивания */
-  bottom: -2px; /* Позиция подчеркивания */
+  height: 2px;
+  bottom: -2px;
   left: 0;
-  background-color: #00b068; /* Цвет подчеркивания */
-  transition: width 0.3s ease; /* Плавный переход */
+  background-color: #00b068;
+  transition: width 0.3s ease;
 }
 
 .list-href:hover::after {
-  width: 100%; /* Полная ширина подчеркивания при наведении */
+  width: 100%;
 }
