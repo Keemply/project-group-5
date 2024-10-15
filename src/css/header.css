@@ -21,11 +21,11 @@
   }
 
   .logo a span {
-    color: #00b068; /* Accent Green для частини "JEFFERSON" */
+    color: #00b068;
     font-weight: bold;
   }
   .dot {
-    color: #00b068; /* Зелений колір для крапки */
+    color: #00b068;
   }
   .theme-switcher {
     display: flex;

@@ -51,6 +51,11 @@
   transition: color 0.3s ease;
   position: relative;
 }
+
+.tech-skills__text,
+.tilted .tech-skills__text {
+  font-family: 'Poppins-Medium';
+}
 .tilted .tech-skills__text {
   color: var(--ACCET-GREEN);
 }
