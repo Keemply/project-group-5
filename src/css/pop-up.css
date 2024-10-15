@@ -72,7 +72,7 @@
 
 /* night theme */
 .night-theme .pop-up-background {
-    background-color: #1E2023;
+    background-color: #1E2023 / 80%;
 }
 
 .night-theme .pop-up-container {
