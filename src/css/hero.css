@@ -438,3 +438,30 @@
 .list-href:hover::after {
   width: 100%;
 }
+
+/* -------------------------ТЕМНАЯ ТЕМА------------------------ */
+.night-theme .title-hero {
+  color: white;
+}
+
+.night-theme .hero-link {
+  color: white;
+}
+.night-theme .text-hero {
+  color: white;
+}
+
+.night-theme .list-href {
+  color: white;
+}
+
+.night-theme .social-media {
+  background-color: #2a2d32;
+}
+
+.night-theme .button-custom {
+  background-color: #009156;
+}
+.night-theme .button-custom:hover {
+  background-color: #14c57c;
+}
