@@ -1,21 +1,24 @@
 const menuToggle = document.querySelector('.menu-toggle');
 const mobileMenu = document.querySelector('.mobile-menu');
 const menuClose = document.querySelector('.menu-close');
-
+const pageBody = document.body;
 // Відкриття мобільного меню
 menuToggle.addEventListener('click', () => {
   mobileMenu.style.display = 'flex';
+  pageBody.style.overflow = 'hidden';
 });
 
 // Закриття мобільного меню
 menuClose.addEventListener('click', () => {
   mobileMenu.style.display = 'none';
+  pageBody.style.overflow = '';
 });
 
 // Закриття меню при натисканні на посилання
 document.querySelectorAll('.mobile-nav a').forEach(link => {
   link.addEventListener('click', () => {
     mobileMenu.style.display = 'none';
+    pageBody.style.overflow = '';
   });
 });
 
