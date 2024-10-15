@@ -49,6 +49,7 @@
 .accordion-item.open {
     background-color: #BCDFD1;
     border-radius: 16px;
+    border-bottom: none;
 }
 
 .accordion-header{
@@ -125,6 +126,7 @@
     display: none;
     background: #BCDFD1;
     border-radius: 8px;
+    background-color: transparent;
 }
 
 .accordion-body.open {
@@ -143,15 +145,25 @@ color: #14C57C;
 
 .night-theme .accordion-header{
     color: #F0F0F0;
-    border-bottom: 1px solid #F0F0F0;
+    background: transparent;
+}
+.night-theme .accordion-item.open .accordion-header{
+    background: transparent;
 }
 
-.night-theme .accordion-body {
+.night-theme .accordion-item.open .accordion-trigger{
+    background: transparent;
+}
+
+.night-theme .accordion-text {
     color: #F0F0F0;
+}
+.night-theme .icon-faq {
+    fill: #F0F0F0;
 }
 
 .night-theme .accordion-item.open {
-    background: #204136;
+    background-color: #204136;
 }
 
 
