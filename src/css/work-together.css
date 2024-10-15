@@ -26,14 +26,18 @@
 
 
 .address-text{
-    font-family: var(--font-family);
+    font-family: 'Poppins-Regular';
     font-weight: 400;
     font-size: 18px;
     line-height: 156%;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--black);
+    color: #292929;
     width: 320px;
+}
+
+.night-theme .address-text {
+    color: #F0F0F0;
 }
 .address-conteiner {
     display: flex;
@@ -198,6 +202,7 @@
 }
 
 .heder {
+    font-family:"impact";
     font-size: 108px;
     line-height: 115%;
     letter-spacing: 0.02em;
@@ -219,27 +224,15 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #292929;
-    width: 486px;
-    
+    width: 486px;  
+}
+.night-theme .address-text {
+    color: #F0F0F0;
 }
 
 .address-conteiner{
 
 }
-
-.address {}
-
-.address-list {}
-
-.address-item {}
-
-.address-icon {}
-
-.address-link {}
-
-.address-conteiner-form {}
-
-.address-form {}
 
 .address-model {
     display: flex;
@@ -248,32 +241,10 @@
     width: 100%;
 }
 
-.form-email {}
-
-.form-email-input {}
-
-.form-message {}
-
-.form-message-text {}
-
 .address-btn {
     width: 173px;
-    padding: 0;
-    
+    padding: 0;  
 }
-
-.backdrop {}
-
-.model {}
-
-.model-close {}
-
-.icon-x {}
-
-.model-tytle {}
-
-.model-text {}
-
 }
 
 @media only screen and (min-width: 1280px) {
@@ -284,12 +255,12 @@
     position: absolute;
     top: 0;
     right: 32px;
-    transform: translateY(0); 
+    transform: translateY(-50); 
 }
 .heder{
-    width: 507px;
+    width: 513px;
     padding-bottom: 80px;
-    font-family:"Impact";
+    font-family:"impact";
 }
 
 .night-theme .address-text {
