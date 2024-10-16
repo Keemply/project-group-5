@@ -267,7 +267,7 @@
         position: absolute;
         top: 0;
         right: 32px;
-        transform: translateY(-50);
+        transform: translateY(-50px);
     }
 
     .heder {
@@ -283,7 +283,6 @@
     .address-desktop {
         display: flex;
         flex-wrap: wrap;
-        gap: 32p
     }
 
     .address-conteiner,

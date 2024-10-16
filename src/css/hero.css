@@ -57,7 +57,7 @@
 
 .social-media {
   display: flex;
-  width: 100%px;
+  width: 100%;
   padding: 32px 0px;
   flex-direction: column;
   justify-content: center;
@@ -98,7 +98,7 @@
     text-transform: uppercase;
     padding-top: 40px;
     width: 100%;
-    font-size: 5w;
+    font-size: 5vw;
     padding-bottom: 56px;
   }
 
@@ -146,7 +146,7 @@
   }
 
   .conteiner-link {
-    padding-top: 60px;
+    margin-top: 60px;
     padding-bottom: 40px;
     width: 100%;
     height: 92px;
@@ -230,8 +230,8 @@
   }
 
   .conteiner-link {
-    padding-top: 60px;
-    padding-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     width: 100%;
     height: 92px;
     flex-shrink: 0;
@@ -326,7 +326,7 @@
   }
 
   .conteiner-link {
-    padding-top: 60px;
+    margin-top: 60px;
     padding-bottom: 40px;
     width: 416px;
     height: 96px;
@@ -428,6 +428,7 @@
 
   .conteiner-link {
     padding-left: 72px;
+    margin: 0;
   }
 
   .title-hero {
