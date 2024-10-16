@@ -28,11 +28,15 @@
 }
 
 
-.swiper-slide {
+.swiper-slide.review-obj {
     box-sizing: border-box;
     padding: 32px;
     background-color: var(--LIGHT-GREY);
     border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: auto;
 }
 
 .review-review {
