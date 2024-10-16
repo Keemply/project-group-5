@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   const form = document.getElementById('contactForm');
+  const emailInput = document.getElementById('email');
+  const emailError = document.getElementById('emailError');
   const popUpClose = document.querySelector('.pop-up-background');
   const modalHeader = document.querySelector('.pop-up-container-header');
   const modalText = document.querySelector('.pop-up-container-text');
@@ -7,23 +9,32 @@ document.addEventListener('DOMContentLoaded', function () {
   form.addEventListener('submit', async function (event) {
     event.preventDefault();
 
-    const emailInput = document.getElementById('email').value;
+    const emailValue = emailInput.value;
+    const emailPattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+
+    if (!emailPattern.test(emailValue)) {
+      emailError.style.display = 'block';
+      emailInput.style.color = '#E74A3B'; 
+      emailInput.style.borderColor = '#E74A3B'; 
+      return; 
+    } else {
+      emailError.style.display = 'none'; 
+      emailInput.style.color = ''; 
+      emailInput.style.borderColor = ''; 
+    }
+
     const messageInput = document.getElementById('message').value;
 
     try {
-      // Відправка POST запиту
-      await sendFormData(emailInput, messageInput);
+      await sendFormData(emailValue, messageInput);
 
-      // Відкриваємо модальне вікно з повідомленням про успіх
       modalHeader.textContent = 'Thank you for your interest in cooperation!';
       modalText.textContent =
         'The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.';
       popUpClose.classList.remove('pop-up-hide');
 
-      // Очищення форми
       form.reset();
     } catch (error) {
-      // Відображення помилки
       modalHeader.textContent = 'Error';
       modalText.textContent =
         error.message || 'Something went wrong. Please try again later.';
