@@ -51,8 +51,8 @@
 
 .about-me-ul {
     /* list-style-type: none; */
-    padding-left: 20px;
-    margin: 0;
+    margin-left: 20px;
+    padding: 0;
     list-style: disc;
 }
 
@@ -84,7 +84,7 @@
 
     .abaut-me-picture {
         max-width: 320px;
-        height: auto;
+        max-height: 374px;
 
     }
 
@@ -97,12 +97,13 @@
     .text-about-me {
 
         max-width: 320px;
-        padding: 12px 0;
+        margin: 12px 0;
+
     }
 
     .logo-abaut-me {
-        padding-top: 28px;
-        padding-bottom: 20px;
+        margin-top: 28px;
+        margin-bottom: 20px;
     }
 }
 
@@ -140,12 +141,12 @@
     .text-about-me {
 
         width: 320px;
-        padding: 12px 0;
+        margin: 12px 0;
     }
 
     .logo-abaut-me {
-        padding-top: 40px;
-        padding-bottom: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
 
     }
 }
@@ -225,7 +226,8 @@
     .abaut-me-picture {
         width: 336px;
         height: 392px;
-        align-self: flex-end;
+        /* align-self: flex-end; */
+        margin-top: 400px ;
     }
 
     .images-abaut-me {
@@ -236,12 +238,12 @@
     }
 
     .logo-abaut-me.logo-abaut-me-first {
-        padding-top: 40px;
+        margin-top: 40px;
     }
 
     .abaut-me-text-logo {
-        padding-left: 32px;
-        padding-bottom: 56px;
+        margin-left: 32px;
+        margin-bottom: 56px;
     }
 
     .logo-abaut-me {
@@ -255,19 +257,18 @@
         text-transform: uppercase;
         color: #292929;
 
-        padding-top: 116px;
-        padding-bottom: 32px;
+        margin-top: 60px;
+        margin-bottom: 32px;
     }
 
     .text-about-me {
 
         width: 336px;
-        padding-top: 0;
-        padding-bottom: 24px;
-
-
+        margin-top: 0;
+        margin-bottom: 24px;
 
     }
+
 
     .bio {
         display: flex;
@@ -276,8 +277,17 @@
 
     }
 
+    /* .about-me-ul  { 
+        gap: 16px;
+    } */
+
+    /* .abaut-text-li { 
+        margin-top: 16px;
+    } */
+
     .abaut-me-text {
-        padding-bottom: 16px;
+        margin-top: 16px;
+
     }
 
     .cont-me-to-role {
@@ -306,7 +316,7 @@
     }
 
     .bio {
-        padding-left: 208px;
+        margin-left: 208px;
     }
 
     @media (min-resolution: 192dpi) {
@@ -335,17 +345,17 @@
     }
 
     .abaut-me-text-logo {
-        padding-left: 136px;
-        padding-bottom: 232px;
+        margin-left: 136px;
+        margin-bottom: 232px;
     }
 
     .cont-me-to {
-        padding-left: 208px;
+        margin-left: 208px;
 
     }
 
     .logo-abaut-me {
-        padding-top: 80px;
+        margin-top: 80px;
     }
 
     .text-about-me {
