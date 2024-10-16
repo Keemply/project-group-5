@@ -83,8 +83,8 @@
     }
 
     .abaut-me-picture {
-        width: 320px;
-        height: 374px;
+        max-width: 320px;
+        height: auto;
 
     }
 
