@@ -33,7 +33,6 @@ const checkbox = document.querySelector('#theme-toggle');
 const body = document.body;
 // Перевіряємо, чи вже є збережена тема в localStorage
 const currentTheme = localStorage.getItem('theme');
-console.log(currentTheme);
 // Якщо є, застосовуємо її
 // Якщо збережена тема — dark, то встановлюємо чекбокс як активний
 if (currentTheme === 'dark') {
@@ -43,7 +42,6 @@ if (currentTheme === 'dark') {
 // Якщо збережена тема — dark, то встановлюємо чекбокс як активний
 if (currentTheme === 'dark') {
   checkbox.checked = true;
-
 }
 
 // Функція для перемикання теми

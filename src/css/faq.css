@@ -1,8 +1,7 @@
-
-.faq-container{
+.faq-container {
     min-width: 320px;
     padding: 0px 20px;
-    
+
 }
 
 .faq-title {
@@ -18,9 +17,10 @@
 }
 
 .faq-title .faq-span {
-    color: #00B068; 
+    color: #00B068;
 }
-.faq-img{
+
+.faq-img {
     display: none;
 }
 
@@ -30,12 +30,12 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    
+
 }
 
 .accordion-item {
     box-sizing: border-box;
-     display: flex;
+    display: flex;
     width: 100%;
     padding: 28px 24px;
     flex-direction: column;
@@ -49,9 +49,10 @@
 .accordion-item.open {
     background-color: #BCDFD1;
     border-radius: 16px;
+    border-bottom: none;
 }
 
-.accordion-header{
+.accordion-header {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -71,14 +72,16 @@
     width: 100%;
     text-align: left;
     cursor: pointer;
-    
+
 }
-.accordion-item.open .accordion-header{
+
+.accordion-item.open .accordion-header {
     background-color: #BCDFD1;
-   
+
 }
-.accordion-header-btn {
-   background-color: transparent;
+
+.accordion-trigger {
+    background-color: transparent;
     border: none;
     cursor: pointer;
     display: flex;
@@ -88,17 +91,18 @@
     justify-content: center;
     align-items: center;
     transition: background-color 0.3s ease;
-    
-   
+
+
 }
-.accordion-item.open .accordion-header-btn{
+
+.accordion-item.open .accordion-trigger {
     background-color: #BCDFD1;
 
 }
 
-.accordion-header-btn[aria-expanded="true"] {
-    background: #BCDFD1; 
-    
+.accordion-trigger[aria-expanded="true"] {
+    background: #BCDFD1;
+
 }
 
 
@@ -110,52 +114,70 @@
 .accordion-item.open .icon-faq {
     transform: rotate(0deg);
 }
+
 .accordion-item:not(.open) .icon-faq {
-    transform: rotate(180deg); 
+    transform: rotate(180deg);
 }
+
 .accordion-text {
     font-family: Poppins, sans-serif;
     font-size: 16px;
     font-weight: 300;
-    line-height: 150%; 
+    line-height: 150%;
     letter-spacing: 0.03em;
     color: #292929;
 }
+
 .accordion-body {
     display: none;
     background: #BCDFD1;
     border-radius: 8px;
+    background-color: transparent;
 }
 
 .accordion-body.open {
     display: block;
 
 }
+
 /* night-theme-FAQ */
-.night-theme .section-wrap {
-    background: #204136;
-}
 
 .night-theme .faq-title {
-color: #F0F0F0;
+    color: #F0F0F0;
 }
 
 .night-theme .faq-title .faq-span {
-color: #14C57C;
+    color: #14C57C;
 }
 
-.night-theme .accordion-item {
+.night-theme .accordion-header {
     color: #F0F0F0;
-    border-bottom: #F0F0F0;
+    background: transparent;
+}
+
+.night-theme .accordion-item.open .accordion-header {
+    background: transparent;
+}
+
+.night-theme .accordion-item.open .accordion-trigger {
+    background: transparent;
+}
+
+.night-theme .accordion-text {
+    color: #F0F0F0;
+}
+
+.night-theme .icon-faq {
+    fill: #F0F0F0;
 }
 
 .night-theme .accordion-item.open {
-    background: #204136;
+    background-color: #204136;
 }
 
 
 @media (min-width: 768px) {
-   
+
     .faq-title {
         display: flex;
         flex-wrap: wrap;
@@ -164,7 +186,7 @@ color: #14C57C;
         letter-spacing: 0.01em;
     }
 
-    .accordion-header-btn {
+    .accordion-trigger {
         font-size: 20px;
         line-height: 160%;
     }
@@ -172,16 +194,16 @@ color: #14C57C;
 
 
 @media (min-width: 1280px) {
-    
-   
-    .faq-container{
+
+
+    .faq-container {
         display: flex;
         flex-direction: row;
         padding: 0px 32px;
-        
+
     }
 
-    .left-part-faq{
+    .left-part-faq {
         display: flex;
         flex-direction: column;
     }
@@ -192,15 +214,16 @@ color: #14C57C;
         align-items: flex-start;
         margin-top: 276px;
         margin-left: 98px;
-        
+
     }
 
     .faq-title {
-        
-        width: 520;
-        margin-right: 104;
+
+        width: 520px;
+        margin-right: 104px;
         margin-bottom: 240px;
     }
+
     .faq-img {
 
         display: flex;
@@ -209,9 +232,10 @@ color: #14C57C;
         padding: 1.194px 1.968px 0.562px 3.441px;
         justify-content: center;
         align-items: center;
-       
+
     }
+
     .accordion-item {
-       padding: 28px 24px;
+        padding: 28px 24px;
     }
 }

@@ -2,6 +2,7 @@
   overflow: hidden;
 }
 
+
 .header {
   padding-top: 36px;
   padding-bottom: 36px;
@@ -23,6 +24,7 @@
 .menu-icon::after {
   background-color: var(--WHITE);
 }
+
 .night-theme .menu-icon::after {
   background-color: var(--WHITE);
 }
@@ -40,20 +42,23 @@
 }
 
 @media screen and (max-width: 360px) {
+
   /* Заголовок */
   .header-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #f0f0f0; /* Білий фон */
+    background-color: #f0f0f0;
+    /* Білий фон */
   }
 
   /* Лого з кольором */
   .logo a {
     font-size: 16px;
     text-decoration: none;
-    color: #000; /* Основний колір тексту */
+    color: #000;
+    /* Основний колір тексту */
     font-weight: bold;
   }
 
@@ -61,9 +66,11 @@
     color: #00b068;
     font-weight: bold;
   }
+
   .dot {
     color: #00b068;
   }
+
   .theme-switcher {
     display: flex;
   }
@@ -87,7 +94,7 @@
     cursor: pointer;
   }
 
-  #theme-toggle:checked + .theme-label {
+  #theme-toggle:checked+.theme-label {
     background-color: #2a2d32;
   }
 
@@ -122,7 +129,7 @@
     right: 9%;
   }
 
-  #theme-toggle:checked + .theme-label::before {
+  #theme-toggle:checked+.theme-label::before {
     transform: translateX(25px);
     width: 20px;
     height: 20px;
@@ -132,17 +139,18 @@
     right: 4px;
   }
 
-  #theme-toggle:checked + .theme-label .sun-icon {
+  #theme-toggle:checked+.theme-label .sun-icon {
     left: 11%;
   }
 
-  #theme-toggle:checked + .theme-label .moon-icon {
+  #theme-toggle:checked+.theme-label .moon-icon {
     right: -24%;
   }
 
-  #theme-toggle:active + .theme-label::before {
+  #theme-toggle:active+.theme-label::before {
     width: 35px;
   }
+
   /* Приховуємо навігацію на мобільних */
   .nav {
     display: none;
@@ -217,30 +225,37 @@
 }
 
 @media screen and (min-width: 360px) {
+
   /* Заголовок */
   .header-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #f0f0f0; /* Білий фон */
+    background-color: #f0f0f0;
+    /* Білий фон */
   }
 
   /* Лого з кольором */
   .logo a {
     font-size: 18px;
-    color: #000; /* Основний колір тексту */
+    color: #000;
+    /* Основний колір тексту */
     text-decoration: none;
     font-weight: bold;
   }
 
   .logo a span {
-    color: #00b068; /* Accent Green для частини "JEFFERSON" */
+    color: #00b068;
+    /* Accent Green для частини "JEFFERSON" */
     font-weight: bold;
   }
+
   .dot {
-    color: #00b068; /* Зелений колір для крапки */
+    color: #00b068;
+    /* Зелений колір для крапки */
   }
+
   .theme-switcher {
     display: flex;
   }
@@ -264,7 +279,7 @@
     cursor: pointer;
   }
 
-  #theme-toggle:checked + .theme-label {
+  #theme-toggle:checked+.theme-label {
     background-color: #2a2d32;
   }
 
@@ -299,7 +314,7 @@
     right: 9%;
   }
 
-  #theme-toggle:checked + .theme-label::before {
+  #theme-toggle:checked+.theme-label::before {
     transform: translateX(25px);
     width: 20px;
     height: 20px;
@@ -309,15 +324,15 @@
     right: 4px;
   }
 
-  #theme-toggle:checked + .theme-label .sun-icon {
+  #theme-toggle:checked+.theme-label .sun-icon {
     left: 11%;
   }
 
-  #theme-toggle:checked + .theme-label .moon-icon {
+  #theme-toggle:checked+.theme-label .moon-icon {
     right: -24%;
   }
 
-  #theme-toggle:active + .theme-label::before {
+  #theme-toggle:active+.theme-label::before {
     width: 35px;
   }
 
@@ -368,27 +383,35 @@
 }
 
 @media screen and (min-width: 768px) {
+
   /* Заголовок */
   .header-section {
     padding: 26px 0;
-    background-color: #f0f0f0; /* Білий фон */
+    background-color: #f0f0f0;
+    /* Білий фон */
   }
 
   /* Лого */
   .logo a {
     font-size: 24px;
-    color: #000; /* Основний колір тексту */
-    text-decoration: none; /* Прибираємо підкреслення */
+    color: #000;
+    /* Основний колір тексту */
+    text-decoration: none;
+    /* Прибираємо підкреслення */
     margin-left: 32px;
   }
 
   .logo a span {
-    color: #00b068; /* Accent Green для частини "JEFFERSON" */
+    color: #00b068;
+    /* Accent Green для частини "JEFFERSON" */
     font-weight: bold;
   }
+
   .dot {
-    color: #00b068; /* Зелений колір для крапки */
+    color: #00b068;
+    /* Зелений колір для крапки */
   }
+
   .theme-switcher {
     display: flex;
   }
@@ -412,7 +435,7 @@
     cursor: pointer;
   }
 
-  #theme-toggle:checked + .theme-label {
+  #theme-toggle:checked+.theme-label {
     background-color: #2a2d32;
   }
 
@@ -447,7 +470,7 @@
     right: 9%;
   }
 
-  #theme-toggle:checked + .theme-label::before {
+  #theme-toggle:checked+.theme-label::before {
     transform: translateX(25px);
     width: 20px;
     height: 20px;
@@ -457,52 +480,64 @@
     right: 4px;
   }
 
-  #theme-toggle:checked + .theme-label .sun-icon {
+  #theme-toggle:checked+.theme-label .sun-icon {
     left: 11%;
   }
 
-  #theme-toggle:checked + .theme-label .moon-icon {
+  #theme-toggle:checked+.theme-label .moon-icon {
     right: -24%;
   }
 
-  #theme-toggle:active + .theme-label::before {
+  #theme-toggle:active+.theme-label::before {
     width: 35px;
   }
 
   /* Навігаційне меню */
   .nav {
-    display: block; /* Показуємо навігацію */
+    display: block;
+    /* Показуємо навігацію */
   }
 
   .nav__list {
     display: flex;
-    justify-content: flex-end; /* Вирівнюємо вправо */
+    justify-content: flex-end;
+    /* Вирівнюємо вправо */
     list-style: none;
     padding: 0;
     margin: 0;
   }
 
   .nav__list li {
-    margin-left: 40px; /* Відстань між пунктами меню */
+    margin-left: 40px;
+    /* Відстань між пунктами меню */
   }
 
   .nav__list a {
-    font-weight: 300; /* Вага шрифту */
-    font-size: 16px; /* Розмір шрифту */
-    line-height: 150%; /* Висота рядка */
-    letter-spacing: 0.03em; /* Відстань між літерами */
-    color: var(--black); /* Колір тексту */
-    text-decoration: none; /* Без підкреслення */
-    transition: color 0.3s; /* Анімація при наведенні */
+    font-weight: 300;
+    /* Вага шрифту */
+    font-size: 16px;
+    /* Розмір шрифту */
+    line-height: 150%;
+    /* Висота рядка */
+    letter-spacing: 0.03em;
+    /* Відстань між літерами */
+    color: var(--black);
+    /* Колір тексту */
+    text-decoration: none;
+    /* Без підкреслення */
+    transition: color 0.3s;
+    /* Анімація при наведенні */
   }
 
   .nav__list a:hover {
-    color: #4d5ae5; /* Колір при наведенні */
+    color: #4d5ae5;
+    /* Колір при наведенні */
   }
 
   /* Вирівнювання меню */
   .nav__list {
-    margin-right: 32px; /* Відстань від правого краю */
+    margin-right: 32px;
+    /* Відстань від правого краю */
   }
 
   /* Бургер-кнопка ховається */
@@ -513,26 +548,36 @@
 
 @media screen and (min-width: 1280px) {
   .header-section {
-    display: flex; /* Вирівнюємо елементи в ряд */
-    justify-content: space-between; /* Вирівнюємо елементи з пробілом */
-    align-items: center; /* Центруємо по вертикалі */
-    padding: 20px 32px; /* Внутрішні відступи */
-    background-color: #f0f0f0; /* Білий фон */
+    display: flex;
+    /* Вирівнюємо елементи в ряд */
+    justify-content: space-between;
+    /* Вирівнюємо елементи з пробілом */
+    align-items: center;
+    /* Центруємо по вертикалі */
+    padding: 20px 32px;
+    /* Внутрішні відступи */
+    background-color: #f0f0f0;
+    /* Білий фон */
   }
 
   .logo a {
     font-size: 24px;
-    color: #000; /* Основний колір тексту */
-    text-decoration: none; /* Прибираємо підкреслення */
+    color: #000;
+    /* Основний колір тексту */
+    text-decoration: none;
+    /* Прибираємо підкреслення */
     margin: 0;
   }
 
   .logo a span {
-    color: #00b068; /* Accent Green для частини "JEFFERSON" */
+    color: #00b068;
+    /* Accent Green для частини "JEFFERSON" */
     font-weight: bold;
   }
+
   .dot {
-    color: #00b068; /* Зелений колір для крапки */
+    color: #00b068;
+    /* Зелений колір для крапки */
   }
 
   /* Стилі для кнопки між логотипом і меню */
@@ -559,7 +604,7 @@
     cursor: pointer;
   }
 
-  #theme-toggle:checked + .theme-label {
+  #theme-toggle:checked+.theme-label {
     background-color: #2a2d32;
   }
 
@@ -594,7 +639,7 @@
     right: 9%;
   }
 
-  #theme-toggle:checked + .theme-label::before {
+  #theme-toggle:checked+.theme-label::before {
     transform: translateX(25px);
     width: 20px;
     height: 20px;
@@ -604,44 +649,57 @@
     right: 4px;
   }
 
-  #theme-toggle:checked + .theme-label .sun-icon {
+  #theme-toggle:checked+.theme-label .sun-icon {
     left: 11%;
   }
 
-  #theme-toggle:checked + .theme-label .moon-icon {
+  #theme-toggle:checked+.theme-label .moon-icon {
     right: -24%;
   }
 
-  #theme-toggle:active + .theme-label::before {
+  #theme-toggle:active+.theme-label::before {
     width: 35px;
   }
 
   .nav__list {
-    display: flex; /* Вирівнюємо меню в ряд */
-    list-style: none; /* Прибираємо маркери */
-    padding: 0; /* Прибираємо відступи */
-    margin: 0; /* Прибираємо зовнішні відступи */
+    display: flex;
+    /* Вирівнюємо меню в ряд */
+    list-style: none;
+    /* Прибираємо маркери */
+    padding: 0;
+    /* Прибираємо відступи */
+    margin: 0;
+    /* Прибираємо зовнішні відступи */
   }
 
   .nav__list li {
-    margin-right: 40px; /* Відстань між елементами меню */
+    margin-right: 40px;
+    /* Відстань між елементами меню */
   }
 
   .nav__list a {
-    font-weight: 300; /* Вага шрифту */
-    font-size: 16px; /* Розмір шрифту */
-    line-height: 150%; /* Висота рядка */
-    letter-spacing: 0.03em; /* Відстань між літерами */
-    color: var(--black); /* Колір тексту меню */
-    text-decoration: none; /* Без підкреслення */
+    font-weight: 300;
+    /* Вага шрифту */
+    font-size: 16px;
+    /* Розмір шрифту */
+    line-height: 150%;
+    /* Висота рядка */
+    letter-spacing: 0.03em;
+    /* Відстань між літерами */
+    color: var(--black);
+    /* Колір тексту меню */
+    text-decoration: none;
+    /* Без підкреслення */
   }
 
   .nav__list a:hover {
-    color: var(--accet-green); /* Колір при наведенні */
+    color: var(--accet-green);
+    /* Колір при наведенні */
   }
 
   .menu-toggle {
-    display: none; /* Сховати кнопку на декстопі */
+    display: none;
+    /* Сховати кнопку на декстопі */
   }
 }
 
@@ -654,7 +712,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #fff;
+  background-color: #F0F0F0;
   background-image: url(../images/Hero-decor-bg-mob-1x.png);
   background-repeat: no-repeat;
   /* Забороняє повторення зображення */
@@ -662,7 +720,8 @@
   background-position: center;
   /* Центрує зображення всередині елемента */
   transition: opacity 0.5s ease, visibility 0.5s ease;
-  display: none; /* Приховано за замовчуванням */
+  display: none;
+  /* Приховано за замовчуванням */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -721,10 +780,12 @@
 /* Додаткові стилі */
 @media screen and (max-width: 360px) {
   .nav {
-    display: none; /* Ховаємо навігацію для мобільних */
+    display: none;
+    /* Ховаємо навігацію для мобільних */
   }
 
   .mobile-menu {
-    display: none; /* Приховуємо мобільне меню за замовчуванням */
+    display: none;
+    /* Приховуємо мобільне меню за замовчуванням */
   }
 }

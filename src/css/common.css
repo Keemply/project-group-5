@@ -40,7 +40,7 @@ body {
     }
 
     section {
-        margin-bottom: 80px;
+        padding-bottom: 80px;
     }
 }
 
@@ -53,7 +53,7 @@ body {
     }
 
     section {
-        margin-bottom: 80px;
+        padding-bottom: 80px;
     }
 }
 
@@ -65,7 +65,7 @@ body {
     }
 
     section {
-        margin-bottom: 124px;
+        padding-bottom: 124px;
     }
 }
 
@@ -76,10 +76,10 @@ body {
     }
 
     section {
-        margin-bottom: 164px;
+        padding-bottom: 164px;
     }
 
     #projects {
-        margin-bottom: 48px;
+        padding-bottom: 48px;
     }
 }
