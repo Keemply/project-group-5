@@ -2,6 +2,12 @@
   overflow: hidden;
 }
 
+
+.header {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
 .night-theme .header-section {
   background-color: rgba(30, 32, 35, 1);
 }
@@ -733,6 +739,19 @@
   position: absolute;
   top: 0;
 }
+.logo a {
+  font-size: 24px;
+  color: #000; /* Основний колір тексту */
+  text-decoration: none; /* Прибираємо підкреслення */
+}
+
+.logo a span {
+  color: #00b068; /* Accent Green для частини "JEFFERSON" */
+  font-weight: bold;
+}
+.dot {
+  color: #00b068; /* Зелений колір для крапки */
+}
 
 .menu-close {
   background: none;
@@ -742,8 +761,10 @@
 }
 
 .mobile-nav ul {
-  list-style: none;
-  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
 .mobile-nav ul li {
