@@ -9,7 +9,7 @@
     line-height: 123%;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
     color: #292929;
 }
 
@@ -57,6 +57,7 @@
 }
 
 .address-item {
+    font-style: normal;
     display: flex;
     align-items: center;
     gap: 16px;
@@ -97,6 +98,7 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
+    
 }
 
 .form-email,
@@ -121,6 +123,7 @@
     transition: background-color 0.3s;
     box-sizing: border-box;
     outline: none;
+    position: relative;
 }
 
 .night-theme .form-email-input {
@@ -130,7 +133,17 @@
 
 .form-email-input:hover {
 
+    color: #292929;
+}
+
+.message-error {
+    position: absolute;
     color: #E74A3B;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 133%;
+    letter-spacing: 0.04em;
+    display: none;
 }
 
 .night-theme .form-email-input:hover {
@@ -166,7 +179,7 @@
 
 .form-message-text:hover {
 
-    color: #E74A3B;
+    color: #292929;
 }
 
 .night-theme .form-message-text:hover {
@@ -199,21 +212,27 @@
 }
 
 @media only screen and (min-width: 768px) {
+    .section-address {
+        margin: 0 auto;
+        background-image: url(../images/work-together-backround-tab.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: calc(100% - 32px) top; 
+        background-size: 336px 260px;
+        padding: 100px 0;  
+        }
+
+            @media (min-resolution: 192dpi) {
+        .container-abaut-me {
+            margin: 0 auto;
+            background-image: url(../images/work-together-backround-tab-2x.png)
+            
+        }
+    }
 
     .section-address-container {
         position: relative;
     }
-
-    .address-img {
-        display: inline;
-        width: 336px;
-        height: 260px;
-        position: absolute;
-        top: 0;
-        right: 32px;
-        transform: translateY(-120px);
-    }
-
     .heder {
         font-family: "impact";
         font-size: 108px;
@@ -221,7 +240,7 @@
         letter-spacing: 0.02em;
         text-transform: uppercase;
         color: #292929;
-        padding-bottom: 60px;
+        margin-bottom: 60px;
     }
 
     /* .night-theme */
@@ -260,19 +279,24 @@
 }
 
 @media only screen and (min-width: 1280px) {
-    .address-img {
-        display: inline;
-        width: 528px;
-        height: 406px;
-        position: absolute;
-        top: 0;
-        right: 32px;
-        transform: translateY(-50px);
+    .section-address {
+        background-image: url(../images/work-together-backround.png);
+        background-position: calc(100% - 32px) top; 
+        background-size: 526px 408px;
+        padding: 100px 0;  
+        }
+
+            @media (min-resolution: 192dpi) {
+        .container-abaut-me {
+            margin: 0 auto;
+            background-image: url(../images/work-together-backround-2x.png)
+            
+        }
     }
 
     .heder {
         width: 513px;
-        padding-bottom: 80px;
+        margin-bottom: 80px;
         font-family: "impact";
     }
 
