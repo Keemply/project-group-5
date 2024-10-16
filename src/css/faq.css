@@ -200,7 +200,10 @@
         display: flex;
         flex-direction: row;
         padding: 0px 32px;
-
+        background-image: image-set(url(/images/faq-background1x.png) 1x, url(/images/faq-background1x.png) 2x);
+        background-position: bottom left;
+        background-repeat: no-repeat;
+        background-size: 526px 408px;
     }
 
     .left-part-faq {
@@ -218,23 +221,12 @@
     }
 
     .faq-title {
-
         width: 520px;
         margin-right: 104px;
-        margin-bottom: 240px;
+        
     }
 
-    .faq-img {
-
-        display: flex;
-        width: 526px;
-        height: 408px;
-        padding: 1.194px 1.968px 0.562px 3.441px;
-        justify-content: center;
-        align-items: center;
-
-    }
-
+    
     .accordion-item {
         padding: 28px 24px;
     }
