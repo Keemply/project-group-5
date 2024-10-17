@@ -1,16 +1,14 @@
 footer {
-    width: 100%;
-    margin: 0 auto;
+
+    padding-bottom: 24px;
 }
 
 
 
 .footer-block {
     border-top: 1px solid #e4e5e6;
-    padding-left: 20px;
-    padding-right: 20px;
     padding-top: 40px;
-    margin-bottom: 24px;
+
 }
 
 .night-theme .footer-block {
@@ -95,10 +93,6 @@ footer {
         gap: 40px;
     }
 
-    .footer-block {
-        padding-left: 32px;
-        padding-right: 32px;
-    }
 
     .footer-bottom-par {
         text-align: right;
