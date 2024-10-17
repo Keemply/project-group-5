@@ -293,7 +293,7 @@
     .address-list {
         flex-direction: column;
         gap: 16px;
-
+        padding-bottom: 0;
     }
 
     .address-conteiner {
