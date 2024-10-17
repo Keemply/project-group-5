@@ -4,8 +4,8 @@
 
 
 .header {
-  padding-top: 36px;
-  padding-bottom: 36px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .night-theme .header-section {
@@ -48,7 +48,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+
     background-color: #f0f0f0;
     /* Білий фон */
   }
@@ -87,7 +87,7 @@
     border-radius: 2rem;
     overflow: hidden;
     transition: 0.5s ease;
-    left: 20px;
+
   }
 
   .theme-label:hover {
@@ -231,7 +231,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+
     background-color: #f0f0f0;
     /* Білий фон */
   }
@@ -272,7 +272,7 @@
     border-radius: 2rem;
     overflow: hidden;
     transition: 0.5s ease;
-    left: 20px;
+
   }
 
   .theme-label:hover {
@@ -386,9 +386,14 @@
 
   /* Заголовок */
   .header-section {
-    padding: 26px 0;
+
     background-color: #f0f0f0;
     /* Білий фон */
+  }
+
+  .header {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 
   /* Лого */
@@ -398,7 +403,7 @@
     /* Основний колір тексту */
     text-decoration: none;
     /* Прибираємо підкреслення */
-    margin-left: 32px;
+
   }
 
   .logo a span {
@@ -554,8 +559,6 @@
     /* Вирівнюємо елементи з пробілом */
     align-items: center;
     /* Центруємо по вертикалі */
-    padding: 20px 32px;
-    /* Внутрішні відступи */
     background-color: #f0f0f0;
     /* Білий фон */
   }
@@ -739,18 +742,24 @@
   position: absolute;
   top: 0;
 }
+
 .logo a {
   font-size: 24px;
-  color: #000; /* Основний колір тексту */
-  text-decoration: none; /* Прибираємо підкреслення */
+  color: #000;
+  /* Основний колір тексту */
+  text-decoration: none;
+  /* Прибираємо підкреслення */
 }
 
 .logo a span {
-  color: #00b068; /* Accent Green для частини "JEFFERSON" */
+  color: #00b068;
+  /* Accent Green для частини "JEFFERSON" */
   font-weight: bold;
 }
+
 .dot {
-  color: #00b068; /* Зелений колір для крапки */
+  color: #00b068;
+  /* Зелений колір для крапки */
 }
 
 .menu-close {
