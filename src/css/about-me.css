@@ -1,0 +1,397 @@
+.logo-abaut-me-to {
+    font-family: "Impact", sans-serif;
+    font-weight: 400;
+    font-size: 52px;
+    margin-bottom: 40px;
+    /* line-height: 64px; */
+    line-height: 123%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: right;
+    color: #292929;
+}
+
+.logo-abaut-me-gren {
+    font-family: "Impact", sans-serif;
+    font-weight: 400;
+    font-size: 52px;
+
+    /* line-height: 64px; */
+    line-height: 123%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: right;
+    color: #00b068;
+}
+
+
+
+.logo-abaut-me {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+
+    /* line-height: 40px; */
+    line-height: 125%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #292929;
+}
+
+.text-about-me {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+
+    /* line-height: 24px; */
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    color: #292929;
+}
+
+.about-me-ul {
+    /* list-style-type: none; */
+    margin-left: 20px;
+    padding: 0;
+    list-style: disc;
+}
+
+
+
+
+.abaut-text-li::marker {
+    color: rgb(4, 159, 4);
+
+
+}
+
+@media screen and (max-width:360px) {
+    /* .container-abaut-me {
+        max-width: 360px;
+        margin: 0 auto;
+    } */
+
+    /* .section-abaut-me {
+        margin: 0 auto;
+        padding: 0 20px 0 20px;
+        margin-bottom: 80px;
+    } */
+
+    .logo-abaut-me-to {
+        width: 217px;
+        height: 64px;
+    }
+
+    .abaut-me-picture {
+        max-width: 320px;
+        max-height: 374px;
+
+    }
+
+    .images-abaut-me {
+        border-radius: 16px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .text-about-me {
+
+        max-width: 320px;
+        margin: 12px 0;
+
+    }
+
+    .logo-abaut-me {
+        margin-top: 28px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width:360px) {
+    /* .section-abaut-me {
+        margin: 0 auto;
+        padding: 0 20px 0 20px;
+        margin-bottom: 80px;
+    } */
+
+    /* .container-abaut-me {
+        width: 360px;
+        margin: 0 auto;
+
+    } */
+
+    .logo-abaut-me-to {
+        width: 217px;
+        height: 64px;
+
+    }
+
+    .abaut-me-picture {
+        width: 320px;
+        height: 374px;
+
+    }
+
+    .images-abaut-me {
+        border-radius: 16px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .text-about-me {
+
+        width: 320px;
+        margin: 12px 0;
+    }
+
+    .logo-abaut-me {
+        margin-top: 40px;
+        margin-bottom: 20px;
+
+    }
+}
+
+@media screen and (min-width:768px) {
+
+    /* .section-abaut-me {
+        margin: 0 auto;
+        padding: 0 32px 0 32px;
+        margin-bottom: 124px;
+    } */
+
+    .container-abaut-me {
+        /* width: 768px; */
+        margin: 0 auto;
+        background-image: url(../images/about-me-background-tab.png);
+
+        background-repeat: no-repeat;
+        background-position: calc(100% - 35px) 78%;
+        background-size: 336px 252px;
+
+    }
+
+    @media (min-resolution: 192dpi) {
+        .container-abaut-me {
+            /* width: 768px; */
+            margin: 0 auto;
+            background-image: url(../images/about-me-background-tab-2x.png)
+        }
+    }
+
+    .logo-abaut-me-to {
+
+        font-family: "Impact", sans-serif;
+        font-weight: 400;
+        font-size: 108px;
+
+        /* line-height: 124px; */
+        line-height: 115%;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        text-align: right;
+        color: #292929;
+        margin-bottom: 0;
+        width: 447px;
+        height: 124px;
+
+    }
+
+    .logo-abaut-me-gren {
+        font-family: "Impact", sans-serif;
+        font-weight: 400;
+        font-size: 108px;
+
+        /* line-height: 124px; */
+        line-height: 115%;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        text-align: right;
+        color: #00b068;
+    }
+
+    .cont-abaut-me {
+
+        display: flex;
+        display: block;
+
+
+    }
+
+    .cont-me-to {
+        display: flex;
+
+
+    }
+
+    .abaut-me-picture {
+        width: 336px;
+        height: 392px;
+        /* align-self: flex-end; */
+        margin-top: 400px ;
+    }
+
+    .images-abaut-me {
+        border-radius: 16px;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .logo-abaut-me.logo-abaut-me-first {
+        margin-top: 40px;
+    }
+
+    .abaut-me-text-logo {
+        margin-left: 32px;
+        margin-bottom: 56px;
+    }
+
+    .logo-abaut-me {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 36px;
+
+        /* line-height: 48px; */
+        line-height: 133%;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: #292929;
+
+        margin-top: 60px;
+        margin-bottom: 32px;
+    }
+
+    .text-about-me {
+
+        width: 336px;
+        margin-top: 0;
+        margin-bottom: 24px;
+
+    }
+
+
+    .bio {
+        display: flex;
+        flex: 1;
+
+
+    }
+
+    /* .about-me-ul  { 
+        gap: 16px;
+    } */
+
+    /* .abaut-text-li { 
+        margin-top: 16px;
+    } */
+
+    .abaut-me-text {
+        margin-top: 16px;
+
+    }
+
+    .cont-me-to-role {
+        margin-left: 32px;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+
+    /* .section-abaut-me {
+        margin: 0 auto;
+        padding: 0 32px 0 32px;
+        margin-bottom: 164px;
+    } */
+
+    .container-abaut-me {
+        min-width: 1280px;
+        margin: 0 auto;
+        background-image: url(../images/about-me-background.png);
+
+        background-repeat: no-repeat;
+        background-position: calc(100% - 35px) 70%;
+        background-size: 384px 288px;
+
+    }
+
+    .bio {
+        margin-left: 208px;
+    }
+
+    @media (min-resolution: 192dpi) {
+        .container-abaut-me {
+            max-width: 1280px;
+            margin: 0 auto;
+            background-image: url(../images/about-me-background-2x.png);
+            /* background-repeat: no-repeat;
+                background-position: right 70%;
+                background-size: 384px 288px; */
+
+        }
+    }
+
+    .abaut-me-picture {
+        width: 384px;
+        height: 448px;
+
+    }
+
+    .images-abaut-me {
+        border-radius: 16px;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .abaut-me-text-logo {
+        margin-left: 136px;
+        margin-bottom: 232px;
+    }
+
+    .cont-me-to {
+        margin-left: 208px;
+
+    }
+
+    .logo-abaut-me {
+        margin-top: 80px;
+    }
+
+    .text-about-me {
+        width: 488px;
+
+    }
+
+    .abaut-me-text {
+        width: 384px;
+
+    }
+
+    .cont-me-to-role {
+        margin-left: 136px;
+    }
+}
+
+/* night theme */
+.night-theme .section-abaut-me {
+    background-color: #1E2023;
+}
+
+.night-theme .container-abaut-me {
+    background-color: #1E2023;
+    border: transparent;
+}
+
+.night-theme .logo-abaut-me-to {
+    color: var(--WHITE);
+
+}
+
+.night-theme .logo-abaut-me {
+    color: var(--WHITE);
+}
+
+.night-theme .text-about-me {
+    color: var(--WHITE);
+}

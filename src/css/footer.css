@@ -1,6 +1,6 @@
 footer {
     width: 100%;
-        margin: 0 auto;
+    margin: 0 auto;
 }
 
 
@@ -13,24 +13,31 @@ footer {
     margin-bottom: 24px;
 }
 
-
+.night-theme .footer-block {
+    border-top: 1px solid #F0F0F0;
+}
 
 .footer-logo-link {
     font-family: "Impact", sans-serif;
-        font-weight: 400;
-        font-size: 32px;
-        line-height: 100%;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        color: #292929;
-        cursor: pointer;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    /* color: #292929; */
+    cursor: pointer;
 }
 
 .footer-logo-color {
-color: #00b068;
+    color: #00b068;
 }
+
+.night-theme .footer-logo-color {
+    color: #14C57C;
+}
+
 .footer-logo {
-margin-bottom: 32px;
+    margin-bottom: 32px;
 }
 
 .social-links-list {
@@ -42,29 +49,29 @@ margin-bottom: 32px;
 }
 
 .social-links {
-margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .social-links-item-link {
-font-family: "Poppins",
+    font-family: "Poppins",
         sans-serif;
     font-weight: 300;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.03em;
-color: #292929;
-cursor: pointer;
+    /* color: #292929; */
+    cursor: pointer;
 }
 
 .footer-bottom-par {
-font-family: "Poppins",
+    font-family: "Poppins",
         sans-serif;
     font-weight: 300;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.03em;
     text-align: center;
-    color: #292929;
+    /* color: #292929; */
 }
 
 .footer-bottom {
@@ -72,28 +79,30 @@ font-family: "Poppins",
     text-align: center;
 }
 
+.social-links-list a:hover {
+    color: #00B068;
+}
 
-/* @media screen and (min-width:360px) {
-    footer {
-        width: 360px;
-        margin: 0 auto;
-    }
-} */
+.night-theme .social-links-list a:hover {
+    color: #14C57C;
+}
+
+
 
 @media screen and (min-width:768px) {
-.social-links-list {
+    .social-links-list {
         flex-direction: row;
         gap: 40px;
     }
 
-        .footer-block {
-            padding-left: 32px;
-            padding-right: 32px;
-        }
+    .footer-block {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
 
-                .footer-bottom-par {
-                    text-align: right;
-                }
+    .footer-bottom-par {
+        text-align: right;
+    }
 }
 
 @media screen and (min-width:1280px) {
@@ -103,11 +112,12 @@ font-family: "Poppins",
         margin-bottom: 40px;
         align-items: center;
     }
-        .footer-logo {
-            margin-bottom: 0px;
-        }
 
-                .social-links {
-                    margin-bottom: 0px;
-                }
+    .footer-logo {
+        margin-bottom: 0px;
+    }
+
+    .social-links {
+        margin-bottom: 0px;
+    }
 }

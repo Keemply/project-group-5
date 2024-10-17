@@ -8,6 +8,7 @@
     --HOVER-GREEN: #009156;
     --ERROR: #e74a3b;
     --HOVER-GREY: #bbbbbb;
+    --BLACK-80: rgba(41, 41, 41, 80%)
 }
 
 /* Основні стилі */
@@ -19,6 +20,11 @@ body {
     font-family: 'Poppins-Light', sans-serif;
     color: var(--BLACK);
     background-color: var(--WHITE);
+}
+
+.night-theme {
+    background-color: rgba(30, 32, 35, 1);
+    color: var(--WHITE);
 }
 
 .container {
@@ -34,7 +40,7 @@ body {
     }
 
     section {
-        margin-bottom: 80px;
+        padding-bottom: 80px;
     }
 }
 
@@ -47,7 +53,7 @@ body {
     }
 
     section {
-        margin-bottom: 80px;
+        padding-bottom: 80px;
     }
 }
 
@@ -59,7 +65,7 @@ body {
     }
 
     section {
-        margin-bottom: 124px;
+        padding-bottom: 124px;
     }
 }
 
@@ -70,6 +76,10 @@ body {
     }
 
     section {
-        margin-bottom: 164px;
+        padding-bottom: 164px;
+    }
+
+    #projects {
+        padding-bottom: 48px;
     }
 }

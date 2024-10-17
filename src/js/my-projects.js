@@ -4,8 +4,6 @@ const myProjectButtonContainer = document.querySelector(
 );
 const myProjectLoader = document.querySelector('.my-projects__loader');
 const myProjectButton = document.querySelector('.my-projects__button');
-const myProjectsvg = document.querySelector('.my-projects__svg');
-
 let currentIndex = 0;
 const projectsPerPage = 3;
 
@@ -51,12 +49,10 @@ myProjectButton.addEventListener('click', event => {
 
   myProjectLoader.style.display = 'block';
   myProjectButton.style.display = 'none';
-  myProjectsvg.style.display = 'none';
   setTimeout(() => {
     showMoreProjects();
     myProjectLoader.style.display = 'none';
     myProjectButton.style.display = 'block';
-    myProjectsvg.style.display = 'block';
   }, 500);
 });
 showMoreProjects();
