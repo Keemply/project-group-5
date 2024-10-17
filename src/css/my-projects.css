@@ -1,4 +1,5 @@
 .my-projects__title {
+  font-weight: 400;
   font-family: 'Impact', sans-serif;
   text-transform: uppercase;
   color: var(--BLACK);
