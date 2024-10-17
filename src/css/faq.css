@@ -5,7 +5,7 @@
 }
 
 .faq-title {
-    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-family: 'impact', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 52px;
@@ -55,7 +55,7 @@
     gap: 16px;
     align-self: stretch;
     background: transparent;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins-Regular', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -116,7 +116,7 @@
 }
 
 .accordion-text {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins-Regular', sans-serif;
     font-size: 16px;
     font-weight: 300;
     line-height: 150%;
