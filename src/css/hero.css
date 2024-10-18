@@ -57,6 +57,10 @@
   background: var(--Accet-green, #00b068);
 }
 
+.hero-link:active + .button-custom {
+  background: var(--Accet-green, #00b068);
+}
+
 .social-media {
   display: flex;
   width: 100%;
@@ -366,6 +370,7 @@
   .conteiner-Myphoto {
     padding-top: 168px;
     padding-bottom: 116px;
+    margin-bottom: 16px;
   }
   .list-social-media {
     display: flex;
@@ -514,4 +519,9 @@
 
 .night-theme .button-custom:hover {
   background-color: #14c57c;
+
 }
+.night-theme .button-custom:active {
+  background-color: #14c57c;
+}
+
