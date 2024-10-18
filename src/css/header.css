@@ -55,16 +55,18 @@
 
   /* Лого з кольором */
   .logo a {
-    font-size: 16px;
+    font-family: 'impact';
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0.06em;
     text-decoration: none;
     color: #000;
     /* Основний колір тексту */
-    font-weight: bold;
+    font-weight: 400;
   }
 
   .logo a span {
     color: #00b068;
-    font-weight: bold;
   }
 
   .dot {
@@ -238,17 +240,19 @@
 
   /* Лого з кольором */
   .logo a {
-    font-size: 18px;
+    font-family: 'impact';
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0.06em;
     color: #000;
     /* Основний колір тексту */
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 400;
   }
 
   .logo a span {
     color: #00b068;
     /* Accent Green для частини "JEFFERSON" */
-    font-weight: bold;
   }
 
   .dot {
@@ -398,7 +402,9 @@
 
   /* Лого */
   .logo a {
-    font-size: 24px;
+
+    letter-spacing: 0.05em;
+    font-size: 32px;
     color: #000;
     /* Основний колір тексту */
     text-decoration: none;
@@ -409,7 +415,6 @@
   .logo a span {
     color: #00b068;
     /* Accent Green для частини "JEFFERSON" */
-    font-weight: bold;
   }
 
   .dot {
@@ -564,7 +569,6 @@
   }
 
   .logo a {
-    font-size: 24px;
     color: #000;
     /* Основний колір тексту */
     text-decoration: none;
@@ -575,7 +579,6 @@
   .logo a span {
     color: #00b068;
     /* Accent Green для частини "JEFFERSON" */
-    font-weight: bold;
   }
 
   .dot {
@@ -744,7 +747,7 @@
 }
 
 .logo a {
-  font-size: 24px;
+  /* font-size: 24px; */
   color: #000;
   /* Основний колір тексту */
   text-decoration: none;
@@ -754,7 +757,7 @@
 .logo a span {
   color: #00b068;
   /* Accent Green для частини "JEFFERSON" */
-  font-weight: bold;
+
 }
 
 .dot {
