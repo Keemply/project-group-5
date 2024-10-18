@@ -1,0 +1,327 @@
+.address-img {
+    display: none;
+}
+
+.heder {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 123%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    color: #292929;
+}
+
+.night-theme .heder {
+    color: #F0F0F0;
+}
+
+.logo {
+    color: #00B068;
+}
+
+.night-theme .logo {
+    color: #14C57C;
+}
+
+
+.address-text {
+    font-family: 'Poppins-Regular';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #292929;
+    width: 320px;
+}
+
+.night-theme .address-text {
+    color: #F0F0F0;
+}
+
+.address-conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+/* .address {} */
+
+.address-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-bottom: 40px;
+}
+
+.address-item {
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.address-link {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    color: #292929;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.night-theme .address-link {
+    color: #F0F0F0;
+}
+
+.address-link:hover {
+    color: #00B068;
+}
+
+.address-conteiner-form {
+    width: 100%;
+}
+
+.address-form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+}
+
+.address-model {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    
+}
+
+.form-email,
+.form-message {
+    width: 100%;
+
+}
+
+.form-email-input {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    border-radius: 8px;
+    color: #292929;
+    width: 100%;
+    padding-left: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: #E4E5E6;
+    border: none;
+    transition: background-color 0.3s;
+    box-sizing: border-box;
+    outline: none;
+    position: relative;
+}
+
+.night-theme .form-email-input {
+    background: #2A2D32;
+    color: rgba(240, 240, 240, 0.4);
+}
+
+.form-email-input:hover {
+
+    color: #292929;
+}
+
+.message-error {
+    position: absolute;
+    color: #E74A3B;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 133%;
+    letter-spacing: 0.04em;
+    display: none;
+}
+
+.night-theme .form-email-input:hover {
+    color: #F0F0F0;
+}
+
+.form-message-text {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    color: #292929;
+    padding: 12px;
+    resize: none;
+    background: #E4E5E6;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    width: 100%;
+    height: 128px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-bottom: 32px;
+    outline: none;
+}
+
+.night-theme .form-message-text {
+    background: #2A2D32;
+    color: rgba(240, 240, 240, 0.4);
+
+}
+
+.form-message-text:hover {
+
+    color: #292929;
+}
+
+.night-theme .form-message-text:hover {
+    color: #F0F0F0;
+}
+
+.address-btn {
+    border-radius: 8px;
+    padding: 12px 24px;
+    width: 100%;
+    height: 48px;
+    background-color: #00B068;
+    color: #F0F0F0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.night-theme .address-btn {
+    background-color: #14C57C;
+}
+
+.address-btn:hover {
+    background-color: #009156;
+}
+
+@media only screen and (min-width: 768px) {
+    .section-address {
+        margin: 0 auto;
+        background-image: url(../images/work-together-backround-tab.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: calc(100% - 32px) top; 
+        background-size: 336px 260px;
+        padding: 100px 0;  
+        }
+
+            @media (min-resolution: 192dpi) {
+        .container-abaut-me {
+            margin: 0 auto;
+            background-image: url(../images/work-together-backround-tab-2x.png)
+            
+        }
+    }
+
+    .section-address-container {
+        position: relative;
+    }
+    .heder {
+        font-family: "impact";
+        font-size: 108px;
+        line-height: 115%;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #292929;
+        margin-bottom: 60px;
+    }
+
+    /* .night-theme */
+    .night-theme .logo {
+        color: #14C57C;
+    }
+
+    .address-text {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 160%;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #292929;
+        width: 486px;
+    }
+
+    .night-theme .address-text {
+        color: #F0F0F0;
+    }
+
+    /* .address-conteiner {} */
+
+    .address-model {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        width: 100%;
+    }
+
+    .address-btn {
+        width: 173px;
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .section-address {
+        background-image: url(../images/work-together-backround.png);
+        background-position: calc(100% - 32px) top; 
+        background-size: 526px 408px;
+        padding: 100px 0;  
+        }
+
+            @media (min-resolution: 192dpi) {
+        .container-abaut-me {
+            margin: 0 auto;
+            background-image: url(../images/work-together-backround-2x.png)
+            
+        }
+    }
+
+    .heder {
+        width: 513px;
+        margin-bottom: 80px;
+        font-family: "impact";
+    }
+
+    .night-theme .address-text {
+        color: #F0F0F0;
+    }
+
+    .address-desktop {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .address-conteiner,
+    .address-conteiner-form {
+        flex: 1;
+    }
+
+    .address-list {
+        flex-direction: column;
+        gap: 16px;
+        padding-bottom: 0;
+    }
+
+    .address-conteiner {
+        gap: 120px;
+    }
+
+}
