@@ -50,6 +50,19 @@
   fill: transparent;
 }
 
+.caption-text{
+  font-family: 'Poppins-Regular', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5556;
+    letter-spacing: .02777em;
+    text-transform: uppercase;
+}
+
+.benefits-text{
+  font-family: 'Poppins-Light', sans-serif;
+}
 
 @media screen and (max-width: 767px) {
   .benefits-section {
@@ -101,6 +114,12 @@
   .grid-item4 {
     grid-column: 1 / 2;
     grid-row: 3;
+  }
+
+  .caption-text{
+    font-size: 20px;
+        line-height: 1.6;
+        letter-spacing: .025em;
   }
 }
 
