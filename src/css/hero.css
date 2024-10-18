@@ -318,6 +318,10 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .conteiner-link {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
   .conteiner-Myphoto {
     padding-top: 168px;
     padding-bottom: 116px;
@@ -361,6 +365,7 @@
     letter-spacing: 0.5px;
     text-transform: uppercase;
     margin-left: 136px;
+    margin-top: 0;
   }
 
   .text-hero-span {
