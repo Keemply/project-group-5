@@ -52,6 +52,9 @@
 .hero-link:hover + .button-custom {
   background: var(--Accet-green, #00b068);
 }
+.hero-link:active + .button-custom {
+  background: var(--Accet-green, #00b068);
+}
 .social-media {
   display: flex;
   width: 100%px;
@@ -462,5 +465,8 @@
   background-color: #009156;
 }
 .night-theme .button-custom:hover {
+  background-color: #14c57c;
+}
+.night-theme .button-custom:active {
   background-color: #14c57c;
 }
